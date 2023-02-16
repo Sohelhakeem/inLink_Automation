@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="scripts.createPostScripts">
+        <methods>
+          <include name="UploadVideo_Multiple"/>
+          <include name="Upload_youtube_Url"/>
+          <include name="upload_FivePlus_Images"/>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- scripts.createPostScripts -->
+      <class name="scripts.NewsFeed_Home">
+        <methods>
+          <include name="Delete_Post"/>
+          <include name="openApp"/>
+          <include name="Play_Posted_Video"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- scripts.NewsFeed_Home -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
