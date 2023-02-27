@@ -28,9 +28,9 @@ private WebElement filterbutton;
 		private WebElement compitators;
 		@FindBy(xpath="(//input[@type='checkbox'])[4]")
 		private WebElement industrialRelationship;
-//		@FindBy(xpath="(//input[@type='checkbox'])[6]")
-//		private WebElement manufacturer;
-		@FindBy(xpath="(//input[@type='checkbox'])[5]")
+		@FindBy(xpath="(//input[@type='checkbox'])[6]")
+		private WebElement manufacturer;
+		@FindBy(xpath="//body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[3]/div[2]/div[1]/div[4]/div[2]/span[1]/input[1]")
 		private WebElement partnerCheckbox;
 		@FindBy(xpath="(//input[@type='checkbox'])[6]")
 		private WebElement shareHolderCheckbox;
@@ -40,7 +40,7 @@ private WebElement filterbutton;
 @FindBy(xpath="//span[@class='pdngXS brdrBlackSM postWidth brdrRadiusXSM pointer lightTxt feedHover']")
 private WebElement createPost;
 
-@FindBy(xpath="(//div[@class='flexAutoRow pdngRXS'])[1]")
+@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/*[name()='svg'][1]")
 private WebElement threeDots;
 	@FindBy(xpath="//li[normalize-space()='Edit']")
 	private WebElement editicon;
@@ -109,7 +109,7 @@ private WebElement Share;
 
 
 
-@FindBy(xpath="//button[normalize-space()='Load More']")
+@FindBy(xpath="//button[normalize-space()='See More']")
 private WebElement loadMore;
 public WebElement getLoadMore() {
 	return loadMore;
@@ -149,9 +149,9 @@ public void Threedotsfilter() {
 		      public void IndustrialRelationship() {
 		    	  industrialRelationship.click();
 		      }
-//		      public void Manufacturer() {
-//		    	  manufacturer.click();
-//		      }
+		      public void Manufacturer() {
+		    	  manufacturer.click();
+		      }
 		      public void PartnerCheckbox() {
 		    	  partnerCheckbox.click();
 		      }

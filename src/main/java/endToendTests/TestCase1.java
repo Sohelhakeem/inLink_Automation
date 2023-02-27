@@ -31,8 +31,6 @@ import pomPages.NetworksPage;
 				
 			driver=new ChromeDriver();
 			driver.manage().window().maximize();
-			
-			
 	  }
 
 	  @Test

@@ -5,8 +5,8 @@
     <classes>
       <class name="CompanyScripts.test">
         <methods>
+          <include name="BookmaarkPost_Comment"/>
           <include name="openApp"/>
-          <include name="Delete_Post_SaveArchieve"/>
           <include name="closeApp"/>
         </methods>
       </class> <!-- CompanyScripts.test -->

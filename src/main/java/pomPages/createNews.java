@@ -39,17 +39,17 @@ public WebElement getPublicBtn() {
 	return publicBtn;
 }
 
-			@FindBy(xpath="//body[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[2]/div[1]/div[1]/span[1]/input[1]")
+			@FindBy(xpath="(//input[@type='checkbox'])[6]")
 			private WebElement employeesBtn; 
-			@FindBy(xpath="//body[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[2]/div[4]/div[1]/span[1]/input[1]")
+			@FindBy(xpath="(//input[@type='checkbox'])[8]")
 			private WebElement share_Holder; 
-			@FindBy(xpath="//body[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[2]/div[2]/div[1]/span[1]/input[1]")
+			@FindBy(xpath="(//input[@type='checkbox'])[10]")
 			private WebElement partner; 
-			@FindBy(xpath="//body[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[1]/div[4]/div[2]/div[2]/div[3]/div[1]/span[1]/input[1]")
+			@FindBy(xpath="(//input[@type='checkbox'])[7]")
 			private WebElement manufacturer; 
-			@FindBy(xpath="(//input[@type='checkbox'])[11]")
+			@FindBy(xpath="(//input[@type='checkbox'])[9]")
 			private WebElement vendor; 
-			@FindBy(xpath="//body[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[2]/div[4]/div[2]/div[2]/div[6]/div[1]/span[1]/input[1]")
+			@FindBy(xpath="(//input[@type='checkbox'])[11]")
 			private WebElement distribtor; 
 			public WebElement getDistribtor() {
 				return distribtor;

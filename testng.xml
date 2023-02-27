@@ -3,8 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="scripts.createPostScripts"/>
-      <class name="scripts.NewsFeed_Home"/>
+      <class name="CompanyScripts.compCreatePostScripts"/>
+      <class name="CompanyScripts.compNewsFeed_Home"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
