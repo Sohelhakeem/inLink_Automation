@@ -30,10 +30,11 @@ public class ConnectionRequestPage {
 	@FindBy(xpath="//button[normalize-space()='Cancel']")
 	private WebElement cancel;
 	
-	@FindBy(xpath="//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation whiteTxt css-unu0yk']")
+	@FindBy(xpath="(//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation whiteTxt css-unu0yk'])[1]")
 	private WebElement connect;
 	
-	
+	@FindBy(xpath="(//button[@class='MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-disableElevation whiteTxt css-unu0yk'])[1]")
+	private WebElement okBtn;
 	
 	public ConnectionRequestPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -70,5 +71,8 @@ public class ConnectionRequestPage {
 	}
 	public void Connect() {
 		connect.click();;
+	}
+	public void OkButton() {
+		okBtn.click();
 	}
 }

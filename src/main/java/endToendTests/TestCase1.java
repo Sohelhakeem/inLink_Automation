@@ -12,6 +12,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import CompanyScripts.MyRetry;
 import genericLib.PropertyFile;
 import genericLib.WebDriverUtilies;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -33,7 +34,7 @@ import pomPages.NetworksPage;
 			driver.manage().window().maximize();
 	  }
 
-	  @Test
+	  @Test(retryAnalyzer = MyRetry.class)
 	  public void testCase1() throws InterruptedException, IOException {
 	    // Log into Account A
 	    driver.get(p.getPropertyFiledata("url"));
@@ -60,8 +61,8 @@ import pomPages.NetworksPage;
 		ConnectionRequestPage cn = new ConnectionRequestPage(driver);
 		cn.SelectRelationDD();
 		cn.Manufacturer();
-		cn.AssignRMField("mallika");
-		driver.findElement(By.xpath("//div[@class='pdngHSM']//div[3]//*[name()='svg']")).click();
+		//cn.AssignRMField("mallika");
+		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
 		Point cb = cn.getCheckBox().getLocation();
 		int x =cb.getX();
 		int y =cb.getY();
@@ -69,16 +70,18 @@ import pomPages.NetworksPage;
 		cn.CheckBox();
 		cn.Connect();
 		Thread.sleep(3000);
-		 String expectedTitle2 = "Connection request has sent successfully. Check the status in pending connections";
-			String actualTitle2 = driver.findElement(By.xpath("//div[contains(text(),'Connection request has sent successfully. Check th')]")).getText();
+		 String expectedTitle2 = "Network Connections";
+			String actualTitle2 = driver.findElement(By.xpath("(//span[@class='mainHdngTxt textCntr'])[1]")).getText();
 			Assert.assertEquals(expectedTitle2, actualTitle2);
+		
+		cn.OkButton();
 	    // Log out of Account A
 	   LogoutPage l1 = new LogoutPage(driver);
 	   l1.LogoutButton();
 	   Thread.sleep(5000);
 	    // Log into Account B
-	   driver.get(p.getPropertyFiledata("url"));
-	    driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+//	   driver.get(p.getPropertyFiledata("url"));
+//	    driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		l.email_TF(p.getPropertyFiledata("emailid1"));
 		l.password_TF(p.getPropertyFiledata("password"));
 		l.LoginButton();

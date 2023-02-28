@@ -3,22 +3,20 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="scripts.createPostScripts">
+      <class name="endToendTests.TestCase2">
         <methods>
-          <include name="UploadVideo_Multiple"/>
-          <include name="UploadText"/>
           <include name="openApp"/>
+          <include name="testCase1"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- scripts.createPostScripts -->
-      <class name="scripts.NewsFeed_Home">
+      </class> <!-- endToendTests.TestCase2 -->
+      <class name="endToendTests.TestCase1">
         <methods>
-          <include name="Delete_Post"/>
           <include name="openApp"/>
-          <include name="Play_Posted_Video"/>
           <include name="closeApp"/>
+          <include name="testCase1"/>
         </methods>
-      </class> <!-- scripts.NewsFeed_Home -->
+      </class> <!-- endToendTests.TestCase1 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

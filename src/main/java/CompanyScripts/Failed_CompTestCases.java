@@ -12,7 +12,7 @@ import pomPages.LoginPage;
 import pomPages.createNews;
 import pomPages.homePage;
 
-public class Failed_TestCases extends BaseClass {
+public class Failed_CompTestCases extends BaseClass {
 	@Test(priority=7)
 	//Company Create Post
 	//UploadVideo

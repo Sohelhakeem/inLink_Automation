@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LogoutPage {
-@FindBy(xpath="//div[@class='flexMinWidthCol pdngXS']")
+@FindBy(xpath="//span[@class='resNavLinkTxt']")
 private WebElement logoutBtn;
 
 public LogoutPage(WebDriver driver) {

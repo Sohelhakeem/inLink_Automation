@@ -47,6 +47,9 @@ public class NetworksPage {
 					@FindBy( xpath="//body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[5]/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/span[1]/input[1]")
 					private WebElement all;
 					
+					@FindBy( xpath="(//input[contains(@value,'of')])[1]")
+					private WebElement humanresourseof;
+					
 					@FindBy( xpath="//input[@value='Competitors of']")
 					private WebElement compititorsOf;
 					
@@ -77,6 +80,12 @@ public class NetworksPage {
 	@FindBy(xpath ="//body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[6]/div[2]/div[1]/div[1]/div[1]/div[2]/button[1]")
 	private WebElement followBtn;
 	
+			@FindBy(xpath ="//button[normalize-space()='Following']")
+			private WebElement followingBtn;
+			
+			@FindBy(xpath ="//button[normalize-space()='Unfollow']")
+			private WebElement unfollow;
+			
 	@FindBy(xpath="//textarea[@placeholder='Please write a short note why you want to reject this Connection.']")
 	private WebElement rejectreasonField;
 	
@@ -120,6 +129,9 @@ public class NetworksPage {
 					public void All () {
 						all.click();
 					}
+					public void HumanResourseOf () {
+						humanresourseof.click();
+					}
 					public void CompititorsOf () {
 						compititorsOf.click();
 					}
@@ -150,6 +162,12 @@ public class NetworksPage {
 	public void FollowButton () {
 		followBtn.click();
 	}
+			public void FollowingBtn () {
+				followingBtn.click();
+			}
+			public void Unfollow () {
+				unfollow.click();
+			}
 	public void Reject () {
 		reject.click();
 	}

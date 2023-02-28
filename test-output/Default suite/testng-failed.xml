@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CompanyScripts.test">
+      <class name="CompanyScripts.compNetworks">
         <methods>
-          <include name="BookmaarkPost_Comment"/>
           <include name="openApp"/>
+          <include name="CompanyFollow_Unfollow"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- CompanyScripts.test -->
+      </class> <!-- CompanyScripts.compNetworks -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

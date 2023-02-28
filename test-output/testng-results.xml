@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="10" passed="1" failed="0" skipped="0">
+<testng-results ignored="8" total="9" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-27T15:07:37 IST" name="Default suite" finished-at="2023-02-27T15:07:56 IST" duration-ms="19723">
+  <suite started-at="2023-02-28T17:45:33 IST" name="Default suite" finished-at="2023-02-28T17:45:52 IST" duration-ms="19285">
     <groups>
     </groups>
-    <test started-at="2023-02-27T15:07:37 IST" name="Default test" finished-at="2023-02-27T15:07:56 IST" duration-ms="19723">
-      <class name="CompanyScripts.compNewsFeed_Home">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compNewsFeed_Home@1e683a3e]" started-at="2023-02-27T15:07:37 IST" name="openApp" finished-at="2023-02-27T15:07:42 IST" duration-ms="5163" status="PASS">
+    <test started-at="2023-02-28T17:45:33 IST" name="Default test" finished-at="2023-02-28T17:45:52 IST" duration-ms="19285">
+      <class name="CompanyScripts.compNetworks">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compNetworks@4d02f94e]" started-at="2023-02-28T17:45:33 IST" name="openApp" finished-at="2023-02-28T17:45:39 IST" duration-ms="6662" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="Delete_Post()[pri:3, instance:CompanyScripts.compNewsFeed_Home@1e683a3e]" started-at="2023-02-27T15:07:42 IST" name="Delete_Post" finished-at="2023-02-27T15:07:55 IST" duration-ms="13438" status="PASS">
+        <test-method signature="CompanyFollow_Unfollow()[pri:8, instance:CompanyScripts.compNetworks@4d02f94e]" started-at="2023-02-28T17:45:39 IST" name="CompanyFollow_Unfollow" finished-at="2023-02-28T17:45:51 IST" duration-ms="12023" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Delete_Post -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compNewsFeed_Home@1e683a3e]" started-at="2023-02-27T15:07:55 IST" name="closeApp" finished-at="2023-02-27T15:07:56 IST" duration-ms="1075" status="PASS">
+        </test-method> <!-- CompanyFollow_Unfollow -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compNetworks@4d02f94e]" started-at="2023-02-28T17:45:51 IST" name="closeApp" finished-at="2023-02-28T17:45:52 IST" duration-ms="542" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Delete_Post status=SUCCESS method=compNewsFeed_Home.Delete_Post()[pri:3, instance:CompanyScripts.compNewsFeed_Home@1e683a3e] output={null}]]]>
+                <![CDATA[[TestResult name=CompanyFollow_Unfollow status=SUCCESS method=compNetworks.CompanyFollow_Unfollow()[pri:8, instance:CompanyScripts.compNetworks@4d02f94e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- CompanyScripts.compNewsFeed_Home -->
+      </class> <!-- CompanyScripts.compNetworks -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
