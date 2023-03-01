@@ -2,7 +2,6 @@ package CompanyScripts;
 
 
 	import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -13,8 +12,6 @@ import org.testng.annotations.Test;
 import genericLib.BaseClass;
 import pomPages.LoginPage;
 import pomPages.NetworksPage;
-import pomPages.createNews;
-import pomPages.homePage;
 
 	public class test extends BaseClass {
 		@Test(priority=8)
@@ -30,10 +27,10 @@ import pomPages.homePage;
 			Assert.assertEquals(expectedTitle, actualTitle);
 		    n.SearchFieldNetwork(p.getPropertyFiledata("searchNetworkCompany"));
 		    n.FollowButton();
-		    Thread.sleep(500);
+		    driver.navigate().refresh();
 		    n.Follow();
 		    n.Unfollow();
-		    Thread.sleep(2000);
+		    Thread.sleep(1000);
 		}
 	}
 

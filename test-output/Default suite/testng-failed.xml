@@ -5,8 +5,8 @@
     <classes>
       <class name="CompanyScripts.compNetworks">
         <methods>
+          <include name="InviteBusiness"/>
           <include name="openApp"/>
-          <include name="CompanyFollow_Unfollow"/>
           <include name="closeApp"/>
         </methods>
       </class> <!-- CompanyScripts.compNetworks -->

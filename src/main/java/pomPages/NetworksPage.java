@@ -17,8 +17,25 @@ public class NetworksPage {
 	private WebElement threedots;
 					@FindBy( xpath="//li[@value='myProfile']")
 					private WebElement recommendedIndustries;
+						@FindBy(xpath ="//input[@type='search']")
+						private WebElement RecInsearhfiled;
 					@FindBy( xpath="//li[@value='settings']")
 					private WebElement inviteBusiness;
+					
+						@FindBy(xpath = "//button[@aria-label='whatsapp']//*[name()='svg']//*[name()='circle' and contains(@cx,'32')]")
+						private WebElement whatsapp;
+						@FindBy(xpath = "//div[@class='flexWrap pdngXS']//div[2]//div[1]//div[1]")
+						private WebElement facebook;
+						@FindBy(xpath = "(//div[@class='flexRow alignCntr justifyCntr pdngXS brdrRadiusSM whiteBg'])[3]")
+						private WebElement twitter;
+						@FindBy(xpath = "(//div[@class='flexRow alignCntr justifyCntr pdngXS brdrRadiusSM whiteBg pointer'])[1]")
+						private WebElement instagram;
+						@FindBy(xpath = "(//div[@class='flexRow alignCntr justifyCntr pdngXS brdrRadiusSM whiteBg'])[4]")
+						private WebElement linkedin;
+						@FindBy(xpath = "(//div[@class='flexRow alignCntr justifyCntr pdngXS brdrRadiusSM whiteBg'])[5]")
+						private WebElement telegram;
+						@FindBy(xpath = "(//div[@class='flexRow alignCntr justifyCntr pdngXS brdrRadiusSM whiteBg pointer'])[2]")
+						private WebElement gmail;
 
 	@FindBy( xpath="//button[normalize-space()='MY NETWORKS']")
 	private WebElement myNetworks;
@@ -83,7 +100,7 @@ public class NetworksPage {
 			@FindBy(xpath ="//button[normalize-space()='Following']")
 			private WebElement followingBtn;
 			
-			@FindBy(xpath ="//button[normalize-space()='Unfollow']")
+			@FindBy(xpath ="//button[@id='f3']")
 			private WebElement unfollow;
 			
 	@FindBy(xpath="//textarea[@placeholder='Please write a short note why you want to reject this Connection.']")
@@ -105,11 +122,38 @@ public class NetworksPage {
 	public void SearchFieldNetwork (String name) {
 		searchFieldNetwork.sendKeys(name);
 	}
+			public void ThreeDots () {
+				threedots.click();
+			}
 					public void RecommendedIndustries () {
 						recommendedIndustries.click();
 					}
-					public void InviteBusiness () {
-						inviteBusiness.click();
+					public void RecIndsearhfiled(String name) {
+						RecInsearhfiled.sendKeys(name);
+					}
+	public void InviteBusiness () {
+		inviteBusiness.click();
+	}
+					public void WhatsApp() {
+						whatsapp.click();
+					}
+					public void Facebook() {
+						facebook.click();
+					}
+					public void Twitter() {
+						twitter.click();
+					}
+					public void Instagram() {
+						instagram.click();
+					}
+					public void Linkedin() {
+						linkedin.click();
+					}
+					public void Telegram() {
+						telegram.click();
+					}
+					public void Gmail() {
+						gmail.click();
 					}
 	public void MyNetworks () {
 		myNetworks.click();
