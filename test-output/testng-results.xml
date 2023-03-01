@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="14" total="15" passed="1" failed="0" skipped="0">
+<testng-results ignored="9" total="10" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-01T14:42:24 IST" name="Default suite" finished-at="2023-03-01T14:42:42 IST" duration-ms="18128">
+  <suite started-at="2023-03-01T15:16:22 IST" name="Default suite" finished-at="2023-03-01T15:16:49 IST" duration-ms="27206">
     <groups>
     </groups>
-    <test started-at="2023-03-01T14:42:24 IST" name="Default test" finished-at="2023-03-01T14:42:42 IST" duration-ms="18128">
-      <class name="CompanyScripts.compCreatePostScripts">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compCreatePostScripts@759d26fb]" started-at="2023-03-01T14:42:24 IST" name="openApp" finished-at="2023-03-01T14:42:30 IST" duration-ms="5303" status="PASS">
+    <test started-at="2023-03-01T15:16:22 IST" name="Default test" finished-at="2023-03-01T15:16:49 IST" duration-ms="27206">
+      <class name="CompanyScripts.compNewsFeed_Home">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compNewsFeed_Home@1e683a3e]" started-at="2023-03-01T15:16:22 IST" name="openApp" finished-at="2023-03-01T15:16:27 IST" duration-ms="5471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="Upload_youtube_Url()[pri:4, instance:CompanyScripts.compCreatePostScripts@759d26fb]" started-at="2023-03-01T14:42:30 IST" name="Upload_youtube_Url" finished-at="2023-03-01T14:42:42 IST" duration-ms="12256" status="PASS">
+        <test-method signature="LikeAndShareFeedPost()[pri:17, instance:CompanyScripts.compNewsFeed_Home@1e683a3e]" started-at="2023-03-01T15:16:27 IST" name="LikeAndShareFeedPost" finished-at="2023-03-01T15:16:48 IST" duration-ms="21168" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Upload_youtube_Url -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compCreatePostScripts@759d26fb]" started-at="2023-03-01T14:42:42 IST" name="closeApp" finished-at="2023-03-01T14:42:42 IST" duration-ms="510" status="PASS">
+        </test-method> <!-- LikeAndShareFeedPost -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compNewsFeed_Home@1e683a3e]" started-at="2023-03-01T15:16:48 IST" name="closeApp" finished-at="2023-03-01T15:16:49 IST" duration-ms="518" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Upload_youtube_Url status=SUCCESS method=compCreatePostScripts.Upload_youtube_Url()[pri:4, instance:CompanyScripts.compCreatePostScripts@759d26fb] output={null}]]]>
+                <![CDATA[[TestResult name=LikeAndShareFeedPost status=SUCCESS method=compNewsFeed_Home.LikeAndShareFeedPost()[pri:17, instance:CompanyScripts.compNewsFeed_Home@1e683a3e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- CompanyScripts.compCreatePostScripts -->
+      </class> <!-- CompanyScripts.compNewsFeed_Home -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
