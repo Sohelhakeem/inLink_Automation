@@ -1,9 +1,11 @@
 package pomPages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 public class createNews {
 @FindBy(xpath="//input[@id='imageType']")
@@ -66,6 +68,9 @@ public WebElement getStatus() {
 
 @FindBy(xpath="//div[@class='flexAutoRow alignCntr pdngHXS']")
 private WebElement cancelbtn;
+
+@FindBy(xpath="//div[contains(text(),'News Feed Created Successfully')]")
+private WebElement verifypath;
 
 
 public  createNews (WebDriver driver) {
@@ -147,5 +152,10 @@ public void Cancel_Button() {
 	cancelbtn.click();
 }
 
-
+public void verify() {
+	String expected_Text1 = "News Feed Created Successfully";
+	String actual_Text1 = verifypath.getText();
+	System.out.println(actual_Text1);
+	Assert.assertEquals(expected_Text1, actual_Text1);
+}
 }

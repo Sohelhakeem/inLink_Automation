@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="10" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-01T15:16:22 IST" name="Default suite" finished-at="2023-03-01T15:16:49 IST" duration-ms="27206">
+  <suite started-at="2023-03-02T15:21:12 IST" name="Default suite" finished-at="2023-03-02T15:21:27 IST" duration-ms="15486">
     <groups>
     </groups>
-    <test started-at="2023-03-01T15:16:22 IST" name="Default test" finished-at="2023-03-01T15:16:49 IST" duration-ms="27206">
-      <class name="CompanyScripts.compNewsFeed_Home">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compNewsFeed_Home@1e683a3e]" started-at="2023-03-01T15:16:22 IST" name="openApp" finished-at="2023-03-01T15:16:27 IST" duration-ms="5471" status="PASS">
+    <test started-at="2023-03-02T15:21:12 IST" name="Default test" finished-at="2023-03-02T15:21:27 IST" duration-ms="15486">
+      <class name="CompanyScripts.test">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.test@3514a4c0]" started-at="2023-03-02T15:21:12 IST" name="openApp" finished-at="2023-03-02T15:21:17 IST" duration-ms="4920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="LikeAndShareFeedPost()[pri:17, instance:CompanyScripts.compNewsFeed_Home@1e683a3e]" started-at="2023-03-01T15:16:27 IST" name="LikeAndShareFeedPost" finished-at="2023-03-01T15:16:48 IST" duration-ms="21168" status="PASS">
+        <test-method signature="LikeAndShareFeedPost()[pri:0, instance:CompanyScripts.test@3514a4c0]" started-at="2023-03-02T15:21:17 IST" name="LikeAndShareFeedPost" finished-at="2023-03-02T15:21:27 IST" duration-ms="9825" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LikeAndShareFeedPost -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compNewsFeed_Home@1e683a3e]" started-at="2023-03-01T15:16:48 IST" name="closeApp" finished-at="2023-03-01T15:16:49 IST" duration-ms="518" status="PASS">
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.test@3514a4c0]" started-at="2023-03-02T15:21:27 IST" name="closeApp" finished-at="2023-03-02T15:21:27 IST" duration-ms="687" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=LikeAndShareFeedPost status=SUCCESS method=compNewsFeed_Home.LikeAndShareFeedPost()[pri:17, instance:CompanyScripts.compNewsFeed_Home@1e683a3e] output={null}]]]>
+                <![CDATA[[TestResult name=LikeAndShareFeedPost status=SUCCESS method=test.LikeAndShareFeedPost()[pri:0, instance:CompanyScripts.test@3514a4c0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- CompanyScripts.compNewsFeed_Home -->
+      </class> <!-- CompanyScripts.test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

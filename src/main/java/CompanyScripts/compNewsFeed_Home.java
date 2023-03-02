@@ -470,11 +470,11 @@ public class compNewsFeed_Home extends BaseClass {
 				Assert.assertEquals(expected_Text1, actual_Text1);
 				Thread.sleep(1000);
 				JavascriptExecutor js = (JavascriptExecutor)driver;
-				WebElement LikeBookmark = driver.findElement(By.xpath("(//span[@class='pdngHXS pointer'])[1]"));
+				WebElement Like = driver.findElement(By.xpath("(//span[@class='pdngHSM pointer'][normalize-space()='Like'])[1]"));
 
-				js.executeScript("arguments[0].scrollIntoView(true);", LikeBookmark);
+				js.executeScript("arguments[0].scrollIntoView(true);", Like);
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-				js.executeScript("arguments[0].click();", LikeBookmark);
+				js.executeScript("arguments[0].click();", Like);
 				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				Thread.sleep(2000);
 //				String expected_Text3 = "You liked the post";
