@@ -5,9 +5,9 @@
     <classes>
       <class name="CompanyScripts.test">
         <methods>
-          <include name="LikeAndShareFeedPost"/>
           <include name="openApp"/>
           <include name="closeApp"/>
+          <include name="ChangeRoleAs_Admin"/>
         </methods>
       </class> <!-- CompanyScripts.test -->
     </classes>

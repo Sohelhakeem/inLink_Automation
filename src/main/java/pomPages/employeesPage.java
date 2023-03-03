@@ -28,13 +28,13 @@ public class employeesPage {
 							private WebElement cancel;
 							@FindBy(xpath = "//button[normalize-space()='Save']")
 							private WebElement save;
-			@FindBy(id="status")
+			@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/span[1]/div[1]/span[1]")
 			private WebElement roleEmployee;
 			@FindBy(xpath="(//li[@role='menuitem'])[1]")
 			private WebElement admin;
 						@FindBy(xpath="//button[normalize-space()='Grant Team Admin']")
 						private WebElement grantAdmin;
-			@FindBy(xpath="//div[@class='flexWrap']//div[1]//div[2]//span[1]//div[1]//span[1]")
+			@FindBy(xpath="(//span[@id='status'])[2]")
 			private WebElement roleAdmin;
 					@FindBy(xpath="//li[@role='menuitem']")
 					private WebElement employeesrole;
@@ -51,13 +51,13 @@ public class employeesPage {
 		private WebElement pendingsearch;
 			@FindBy(xpath="//span[@id='status']")
 			private WebElement pendingStatus;
-			@FindBy(xpath="//div[@id='fade-menu']//li[1]")
+			@FindBy(xpath="(//li[@role='menuitem'])[1]")
 			private WebElement Pendingapprove;
-					@FindBy(xpath="//div[@id='fade-menu']//li[1]")
+					@FindBy(xpath="//body[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]")
 					private WebElement Pdepartment;
-					@FindBy(xpath="(//div[@role='button'])[3]")
+					@FindBy(xpath="//body[1]/div[2]/div[3]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]")
 					private WebElement Pdevision;
-					@FindBy(xpath="(//div[contains(@role,'button')])[4]")
+					@FindBy(xpath="(//div[@role='button'])[4]")
 					private WebElement Pdesignation;
 					@FindBy(xpath="(//input[@type='text'])[3]")
 					private WebElement workLocation;
@@ -110,7 +110,7 @@ public class employeesPage {
 	public void Active() {
 		employees.click();
 	}
-	public void SctiveSearchField(String name) {
+	public void ActiveSearchField(String name) {
 		activeSearchField.sendKeys(name);
 	}
 	public void EmployeeProfile() {
@@ -119,16 +119,19 @@ public class employeesPage {
 				public void Editicon() {
 					editicon.click();
 				}
-						public void Department() {
+						public void EditDepartment() {
 							department.click();
 						}
-						public void Designation() {
+						public void EditDesignation() {
 							designation.click();
+						}
+						public void WorkLocation(String name) {
+							workLocation.sendKeys(name);
 						}
 						public void Cancel() {
 							cancel.click();
 						}
-						public void Save() {
+						public void EditSave() {
 							save.click();
 						}
 				public void RoleEmployee() {
@@ -179,8 +182,11 @@ public class employeesPage {
 					public void WorkLocation() {
 						workLocation.click();
 					}
-					public void pendingApprove() {
+					public void PFinalApprove() {
 						approve.click();
+					}
+					public void PFinalApproveDisplayed() {
+						approve.isDisplayed();
 					}
 					public void pendingCancel() {
 						pendingcancel.click();
@@ -190,6 +196,9 @@ public class employeesPage {
 		}
 			public void PendingConfreject() {
 				pConfreject.click();
+			}
+			public void PendingConfrejectDisplay() {
+				pConfreject.isDisplayed();
 			}
 			public void PendingCancel() {
 				Pendingcancel.click();

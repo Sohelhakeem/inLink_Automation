@@ -3,6 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
+      <class name="CompanyScripts.compNetworks">
+        <methods>
+          <include name="WhatsApp_InviteBusiness"/>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- CompanyScripts.compNetworks -->
       <class name="CompanyScripts.compNewsFeed_Home">
         <methods>
           <include name="Delete_Post"/>

@@ -13,7 +13,7 @@ import pomPages.LoginPage;
 import pomPages.NetworksPage;
 
 public class compNetworks extends BaseClass {
-	@Test(priority=7)
+	@Test(priority=7,retryAnalyzer = MyRetry.class)
 	public void CompanyProfile() throws IOException, InterruptedException {
 		LoginPage l = new LoginPage(driver);
 		l.email_TF(p.getPropertyFiledata("emailid"));
