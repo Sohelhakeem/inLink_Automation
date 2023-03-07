@@ -3,20 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="endToendTests.TestCase2">
+      <class name="CompanyScripts.compNetworks">
         <methods>
+          <include name="WhatsApp_InviteBusiness"/>
           <include name="openApp"/>
-          <include name="testCase1"/>
+          <include name="CompanyFollow_Unfollow"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- endToendTests.TestCase2 -->
-      <class name="endToendTests.TestCase1">
-        <methods>
-          <include name="openApp"/>
-          <include name="closeApp"/>
-          <include name="testCase1"/>
-        </methods>
-      </class> <!-- endToendTests.TestCase1 -->
+      </class> <!-- CompanyScripts.compNetworks -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,5 +1,6 @@
 package pomPages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -120,6 +121,11 @@ public void PostButton() {
 public void PublicButton() {
 	publicBtn.click();
 	}
+public void jspublic(WebDriver driver) {
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	js.executeScript("arguments[].click();", publicBtn);
+	
+}
 public void PublicButtonDisplay() {
 	publicBtn.isDisplayed();
 }

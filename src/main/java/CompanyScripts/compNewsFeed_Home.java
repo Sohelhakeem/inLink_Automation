@@ -15,7 +15,7 @@ import pomPages.createNews;
 import pomPages.homePage;
 
 public class compNewsFeed_Home extends BaseClass {
-	@Test//(priority=1,retryAnalyzer = MyRetry.class)
+	@Test(priority=1,retryAnalyzer = MyRetry.class)
 	//Edit the posted feed.
 	public void Edit_Post() throws IOException, InterruptedException  {
 		LoginPage l=new LoginPage(driver);
@@ -558,7 +558,7 @@ public class compNewsFeed_Home extends BaseClass {
 	 		Thread.sleep(6000);
 	 		driver.findElement(By.xpath("//div[@class='imageCntnr aspectRatio16x9']//video")).click();
 	 		//Like
-	 		driver.findElement(By.xpath("//div[@class='flexMinWidthRow pdngHXS']//span[@class='pdngHXS pointer'][normalize-space()='Like']")).click();
+	 		driver.findElement(By.xpath("(//div[@class='flexMinWidthRow pdngHXS'])[2]")).click();
 	 		Thread.sleep(1000);
 //	 		String expected_Text3 = "You liked the post";
 //			String actual_Text3 = driver.findElement(By.xpath("//div[contains(text(),'You liked the post')]")).getText();

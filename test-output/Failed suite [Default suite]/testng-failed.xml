@@ -3,16 +3,13 @@
 <suite name="Failed suite [Failed suite [Default suite]]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)(failed)">
     <classes>
-      <class name="CompanyScripts.compNewsFeed_Home">
+      <class name="CompanyScripts.compCreatePostScripts">
         <methods>
-          <include name="Delete_Post"/>
-          <include name="BookmaarkPost_Comment"/>
-          <include name="BookmaarkPost_share"/>
+          <include name="public_ALL_Emp_Part_Share"/>
           <include name="openApp"/>
           <include name="closeApp"/>
-          <include name="Delete_Post_SaveArchieve"/>
         </methods>
-      </class> <!-- CompanyScripts.compNewsFeed_Home -->
+      </class> <!-- CompanyScripts.compCreatePostScripts -->
     </classes>
   </test> <!-- Default test(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [Default suite]] -->

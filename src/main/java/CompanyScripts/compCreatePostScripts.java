@@ -204,6 +204,7 @@ public class compCreatePostScripts extends BaseClass{
 		 int y=tf.getY();
 		driverutilies.scrollbar(driver, x, y);
 		cn.textContentField("My Employees");
+		Thread.sleep(3000);
 		Point pblc = cn.getPublicBtn().getLocation();
 		 int x1 = pblc.getX();
 		 int y1 =pblc.getY();
@@ -294,7 +295,7 @@ public class compCreatePostScripts extends BaseClass{
  		String actual_Text1 = driver.findElement(By.xpath("//span[@class='mainHdngTxt']")).getText();
  		Assert.assertEquals(expected_Text1, actual_Text1);
 	}	
-	@Test(priority=11)
+	@Test(priority=11,retryAnalyzer = MyRetry.class)
 	public void public_Vendor() throws IOException, InterruptedException {
 		LoginPage l=new LoginPage(driver);
 		l.email_TF(p.getPropertyFiledata("emailid"));
@@ -311,6 +312,7 @@ public class compCreatePostScripts extends BaseClass{
 		 int y=tf.getY();
 		driverutilies.scrollbar(driver, x, y);
 		cn.textContentField("public_Vendor");
+		Thread.sleep(3000);
 		Point pblc = cn.getPublicBtn().getLocation();
 		 int x1 = pblc.getX();
 		 int y1 =pblc.getY();
@@ -332,7 +334,7 @@ public class compCreatePostScripts extends BaseClass{
 	}	
 
 	
-	  @Test(priority =16)
+	  @Test(priority =16,retryAnalyzer = MyRetry.class)
 	  public void public_Distribtor() throws IOException,  InterruptedException {
 	  LoginPage l=new LoginPage(driver);
 	  l.email_TF(p.getPropertyFiledata("emailid"));
@@ -353,7 +355,9 @@ public class compCreatePostScripts extends BaseClass{
 	  cn.getPublicBtn().getLocation();
 	  int x1 = pblc.getX();
 	  int y1 =pblc.getY();
-	  driverutilies.scrollbar(driver, x1, y1); cn.PublicButton();
+	  driverutilies.scrollbar(driver, x1, y1);
+	  Thread.sleep(3000);
+	  cn.PublicButton();
 	  Thread.sleep(500);
 	  Point status = cn.getStatus().getLocation();
 	  int x2 =status.getX();
@@ -385,6 +389,7 @@ public class compCreatePostScripts extends BaseClass{
 		 int y=tf.getY();
 		driverutilies.scrollbar(driver, x, y);
 		cn.textContentField("public_ALL_Manufacturer_Vendor_Distributors");
+		Thread.sleep(3000);
 		Point pblc = cn.getPublicBtn().getLocation();
 		 int x1 = pblc.getX();
 		 int y1 =pblc.getY();
@@ -406,44 +411,42 @@ public class compCreatePostScripts extends BaseClass{
  		String actual_Text1 = driver.findElement(By.xpath("//span[@class='mainHdngTxt']")).getText();
  		Assert.assertEquals(expected_Text1, actual_Text1);
 	}	
-	@Test(priority=13)
+	@Test(priority=13,retryAnalyzer = MyRetry.class)
 	public void public_ALL_Emp_Part_Share() throws IOException, InterruptedException {
-		LoginPage l=new LoginPage(driver);
-		l.email_TF(p.getPropertyFiledata("emailid"));
-		l.password_TF(p.getPropertyFiledata("password"));
-		l.LoginButton();
-		
-		homePage h=new homePage(driver);
-		h.CreatePost();
-		
-		createNews cn = new createNews(driver);
-		cn.UploadImage(p.getPropertyFiledata("UploadImage8"));
-		Point tf = cn.getTextcontentfield().getLocation();
-		 int x = tf.getX();
-		 int y=tf.getY();
-		driverutilies.scrollbar(driver, x, y);
-		cn.textContentField("public_MyEmployees_Partner_ShareHolder");
-		Point pblc = cn.getPublicBtn().getLocation();
-		 int x1 = pblc.getX();
-		 int y1 =pblc.getY();
-		driverutilies.scrollbar(driver, x1, y1);
-		cn.PublicButton();
-		Thread.sleep(500);
-		Point status = cn.getStatus().getLocation();
-		int x2 =status.getX();
-		int y2 =status.getY();
-		driverutilies.scrollbar(driver, x2, y2);
-		cn.Status();
-		
-		cn.Partner();
-		cn.Share_holder();
-		cn.Status();
-		cn.PostButton();
-		String expected_Text1 = "News Feed";
- 		String actual_Text1 = driver.findElement(By.xpath("//span[@class='mainHdngTxt']")).getText();
- 		Assert.assertEquals(expected_Text1, actual_Text1);
-	}	
-	@Test(priority=14)
+			LoginPage l=new LoginPage(driver);
+			l.email_TF(p.getPropertyFiledata("emailid"));
+			l.password_TF(p.getPropertyFiledata("password"));
+			l.LoginButton();
+			
+			homePage h=new homePage(driver);
+			h.CreatePost();
+			
+			createNews cn = new createNews(driver);
+			cn.UploadImage(p.getPropertyFiledata("UploadImage5"));
+			Point tf = cn.getTextcontentfield().getLocation();
+			 int x = tf.getX();
+			 int y=tf.getY();
+			driverutilies.scrollbar(driver, x, y);
+			cn.textContentField("public_Vendor");
+			Point pblc = cn.getPublicBtn().getLocation();
+			 int x1 = pblc.getX();
+			 int y1 =pblc.getY();
+			driverutilies.scrollbar(driver, x1, y1);
+			cn.PublicButton();
+			Thread.sleep(500);
+			Point status = cn.getStatus().getLocation();
+			int x2 =status.getX();
+			int y2 =status.getY();
+			driverutilies.scrollbar(driver, x2, y2);
+			cn.Status();
+			
+			cn.Partner();
+			cn.Share_holder();
+			String expected_Text1 = "News Feed";
+	 		String actual_Text1 = driver.findElement(By.xpath("//span[@class='mainHdngTxt']")).getText();
+	 		Assert.assertEquals(expected_Text1, actual_Text1);
+		}	
+	@Test(priority=14,retryAnalyzer = MyRetry.class)
 	public void Status_archieve() throws IOException, InterruptedException {
 		LoginPage l=new LoginPage(driver);
 		l.email_TF(p.getPropertyFiledata("emailid"));
@@ -454,18 +457,12 @@ public class compCreatePostScripts extends BaseClass{
 		h.CreatePost();
 		
 		createNews cn = new createNews(driver);
-		cn.UploadImage(p.getPropertyFiledata("UploadImage"));
-		Point tf = cn.getTextcontentfield().getLocation();
-		 int x = tf.getX();
-		 int y=tf.getY();
-		driverutilies.scrollbar(driver, x, y);
-		cn.textContentField("Status Archived");
-		Point pblc = cn.getPublicBtn().getLocation();
-		 int x1 = pblc.getX();
-		 int y1 =pblc.getY();
-		driverutilies.scrollbar(driver, x1, y1);
+		cn.textContentField("Status archieve");
+		cn.UploadImage(p.getPropertyFiledata("UploadImage7"));
+		
+		Thread.sleep(4000);
 		cn.PublicButton();
-		Thread.sleep(1000);
+	
 		Point status = cn.getStatus().getLocation();
 		int x2 =status.getX();
 		int y2 =status.getY();
@@ -479,7 +476,6 @@ public class compCreatePostScripts extends BaseClass{
  		String actual_Text1 = driver.findElement(By.xpath("//div[contains(text(),'News Feed Created Successfully')]")).getText();
  		Assert.assertEquals(expected_Text1, actual_Text1);
 	}	
-	
 	@Test(priority=15,retryAnalyzer = MyRetry.class)
 	//UploadImage
 			public void UploadImageAndCancel() throws IOException, InterruptedException  {

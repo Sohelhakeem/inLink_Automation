@@ -16,6 +16,9 @@ public class configurationPage {
 	@FindBy(xpath="//button[normalize-space()='Departments']")
 	private WebElement Departments;
 	
+	@FindBy (xpath = "//button[normalize-space()='Relations']")
+	private WebElement Relations;
+	
 	@FindBy(xpath="//button[normalize-space()='New']")
 	private WebElement NewBtn;
 	
@@ -37,7 +40,20 @@ public class configurationPage {
 	@FindBy(xpath="//button[normalize-space()='Designations']")
 	private WebElement Designations;
 	
-			
+	@FindBy(xpath="//span[normalize-space()='Edit']")
+	private WebElement EditDepartment;
+	
+	@FindBy(xpath="//span[normalize-space()='Delete']")
+	private WebElement DeleteDepartment;
+		@FindBy(xpath="//button[normalize-space()='Cancel']")
+		private WebElement CancelDeleteDepartment;
+		@FindBy(xpath="//button[normalize-space()='Delete']")
+		private WebElement ConfirmDeleteDepartment;
+	
+	@FindBy(xpath="(//*[name()='svg'][@aria-label='Delete'])[1]")
+	private WebElement DeleteDivision;
+		@FindBy(xpath="(//*[name()='svg'][contains(@aria-label,'Edit')])[1]")
+		private WebElement EditDivision;
 		
 	
 	public configurationPage (WebDriver driver) {
@@ -53,6 +69,10 @@ public class configurationPage {
 	}
 	public void Departments() {
 		Departments.click();
+	}
+		
+	public void Relations() {
+		Relations.click();
 	}
 			public void NewBtn() {
 				NewBtn.click();
@@ -78,5 +98,42 @@ public class configurationPage {
 	public void Designations() {
 		Designations.click();
 	}
+	public void EditDepartment() {
+		EditDepartment.click();
+	}
+	public void DeleteDepartment() {
+		DeleteDepartment.click();
+	}
+			public void CancelDeleteDepartment() {
+				CancelDeleteDepartment.click();
+			}
+			public void ConfirmDeleteDepartment() {
+				ConfirmDeleteDepartment.click();
+			}
+	public void EditDivision() {
+		EditDivision.click();
+	}
+	public void DeleteDivision() {
+		DeleteDivision.click();
+	}
+			public void CancelDeleteDivision() {
+				CancelDeleteDepartment.click();
+			}
+			public void ConfirmDeleteDivision() {
+				ConfirmDeleteDepartment.click();
+			}
+	public void DeleteDesignation() {
+		EditDivision.click();
+	}
+	public void EditDesignation() {
+		DeleteDivision.click();
+	}
+			public void CancelDeleteDesignation() {
+				CancelDeleteDepartment.click();
+			}
+			public void ConfirmDeleteDesignation() {
+				ConfirmDeleteDepartment.click();
+			}
+	
 	
 }

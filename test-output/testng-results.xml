@@ -1,165 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-03T18:01:58 IST" name="Default suite" finished-at="2023-03-03T18:03:51 IST" duration-ms="112598">
+  <suite started-at="2023-03-07T11:21:25 IST" name="Default suite" finished-at="2023-03-07T11:21:45 IST" duration-ms="20084">
     <groups>
     </groups>
-    <test started-at="2023-03-03T18:01:58 IST" name="Default test" finished-at="2023-03-03T18:03:51 IST" duration-ms="112598">
-      <class name="CompanyScripts.compEmployeesScripts">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:01:58 IST" name="openApp" finished-at="2023-03-03T18:02:03 IST" duration-ms="4968" status="PASS">
+    <test started-at="2023-03-07T11:21:25 IST" name="Default test" finished-at="2023-03-07T11:21:45 IST" duration-ms="20084">
+      <class name="CompanyScripts.ConfigureDeptScripts">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.ConfigureDeptScripts@3514a4c0]" started-at="2023-03-07T11:21:25 IST" name="openApp" finished-at="2023-03-07T11:21:31 IST" duration-ms="5513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="ChangeRoleAs_Admin()[pri:1, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:02:03 IST" name="ChangeRoleAs_Admin" finished-at="2023-03-03T18:02:20 IST" duration-ms="16832" status="PASS">
+        <test-method signature="create_Dept()[pri:0, instance:CompanyScripts.ConfigureDeptScripts@3514a4c0]" started-at="2023-03-07T11:21:31 IST" name="create_Dept" finished-at="2023-03-07T11:21:45 IST" duration-ms="14145" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ChangeRoleAs_Admin -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:02:20 IST" name="closeApp" finished-at="2023-03-03T18:02:20 IST" duration-ms="309" status="PASS">
+        </test-method> <!-- create_Dept -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.ConfigureDeptScripts@3514a4c0]" started-at="2023-03-07T11:21:45 IST" name="closeApp" finished-at="2023-03-07T11:21:45 IST" duration-ms="379" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ChangeRoleAs_Admin status=SUCCESS method=compEmployeesScripts.ChangeRoleAs_Admin()[pri:1, instance:CompanyScripts.compEmployeesScripts@50b5ac82] output={null}]]]>
+                <![CDATA[[TestResult name=create_Dept status=SUCCESS method=ConfigureDeptScripts.create_Dept()[pri:0, instance:CompanyScripts.ConfigureDeptScripts@3514a4c0] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:02:20 IST" name="openApp" finished-at="2023-03-03T18:02:24 IST" duration-ms="3681" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="ChangeRoleAs_Employee()[pri:2, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:02:24 IST" name="ChangeRoleAs_Employee" finished-at="2023-03-03T18:02:34 IST" duration-ms="9729" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangeRoleAs_Employee -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:02:34 IST" name="closeApp" finished-at="2023-03-03T18:02:34 IST" duration-ms="433" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ChangeRoleAs_Employee status=SUCCESS method=compEmployeesScripts.ChangeRoleAs_Employee()[pri:2, instance:CompanyScripts.compEmployeesScripts@50b5ac82] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:02:34 IST" name="openApp" finished-at="2023-03-03T18:02:38 IST" duration-ms="3540" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="Edit_Official_Details()[pri:3, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:02:38 IST" name="Edit_Official_Details" finished-at="2023-03-03T18:02:52 IST" duration-ms="14457" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Edit_Official_Details -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:02:52 IST" name="closeApp" finished-at="2023-03-03T18:02:52 IST" duration-ms="293" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Edit_Official_Details status=SUCCESS method=compEmployeesScripts.Edit_Official_Details()[pri:3, instance:CompanyScripts.compEmployeesScripts@50b5ac82] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:02:52 IST" name="openApp" finished-at="2023-03-03T18:02:56 IST" duration-ms="3558" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="EmployeeProfile_NewsFeed()[pri:4, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:02:56 IST" name="EmployeeProfile_NewsFeed" finished-at="2023-03-03T18:03:04 IST" duration-ms="8073" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EmployeeProfile_NewsFeed -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:03:04 IST" name="closeApp" finished-at="2023-03-03T18:03:05 IST" duration-ms="1376" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EmployeeProfile_NewsFeed status=SUCCESS method=compEmployeesScripts.EmployeeProfile_NewsFeed()[pri:4, instance:CompanyScripts.compEmployeesScripts@50b5ac82] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:03:05 IST" name="openApp" finished-at="2023-03-03T18:03:09 IST" duration-ms="3902" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="EmployeeProfile()[pri:5, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:03:09 IST" name="EmployeeProfile" finished-at="2023-03-03T18:03:17 IST" duration-ms="8135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EmployeeProfile -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:03:17 IST" name="closeApp" finished-at="2023-03-03T18:03:18 IST" duration-ms="289" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EmployeeProfile status=SUCCESS method=compEmployeesScripts.EmployeeProfile()[pri:5, instance:CompanyScripts.compEmployeesScripts@50b5ac82] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:03:18 IST" name="openApp" finished-at="2023-03-03T18:03:21 IST" duration-ms="3594" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="Pendinf_Approve_Cancel()[pri:6, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:03:21 IST" name="Pendinf_Approve_Cancel" finished-at="2023-03-03T18:03:32 IST" duration-ms="10262" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Pendinf_Approve_Cancel -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:03:32 IST" name="closeApp" finished-at="2023-03-03T18:03:33 IST" duration-ms="1234" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Pendinf_Approve_Cancel status=SUCCESS method=compEmployeesScripts.Pendinf_Approve_Cancel()[pri:6, instance:CompanyScripts.compEmployeesScripts@50b5ac82] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:03:33 IST" name="openApp" finished-at="2023-03-03T18:03:36 IST" duration-ms="3654" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="Pending_reject_Cancel()[pri:7, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:03:36 IST" name="Pending_reject_Cancel" finished-at="2023-03-03T18:03:42 IST" duration-ms="6026" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Pending_reject_Cancel -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:03:42 IST" name="closeApp" finished-at="2023-03-03T18:03:43 IST" duration-ms="320" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Pending_reject_Cancel status=SUCCESS method=compEmployeesScripts.Pending_reject_Cancel()[pri:7, instance:CompanyScripts.compEmployeesScripts@50b5ac82] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:03:43 IST" name="openApp" finished-at="2023-03-03T18:03:46 IST" duration-ms="3497" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="Pendinf_reject()[pri:8, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:03:46 IST" name="Pendinf_reject" finished-at="2023-03-03T18:03:50 IST" duration-ms="4036" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Pendinf_reject -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compEmployeesScripts@50b5ac82]" started-at="2023-03-03T18:03:50 IST" name="closeApp" finished-at="2023-03-03T18:03:51 IST" duration-ms="322" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Pendinf_reject status=SUCCESS method=compEmployeesScripts.Pendinf_reject()[pri:8, instance:CompanyScripts.compEmployeesScripts@50b5ac82] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- CompanyScripts.compEmployeesScripts -->
+      </class> <!-- CompanyScripts.ConfigureDeptScripts -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

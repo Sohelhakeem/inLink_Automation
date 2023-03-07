@@ -5,18 +5,21 @@
     <classes>
       <class name="CompanyScripts.compNetworks">
         <methods>
+          <include name="Instagram_InviteBusiness"/>
+          <include name="InviteBusiness"/>
           <include name="WhatsApp_InviteBusiness"/>
-          <include name="openApp"/>
+          <include name="RecInd_NewsFeed"/>
+          <include name="Telegram_InviteBusiness"/>
+          <include name="Facebook_InviteBusiness"/>
+          <include name="CompanyFollow_Unfollow"/>
           <include name="closeApp"/>
+          <include name="Linkedin_InviteBusiness"/>
+          <include name="Twitter_InviteBusiness"/>
+          <include name="Gmail_InviteBusiness"/>
+          <include name="openApp"/>
+          <include name="Recommanded_Industries"/>
         </methods>
       </class> <!-- CompanyScripts.compNetworks -->
-      <class name="CompanyScripts.compNewsFeed_Home">
-        <methods>
-          <include name="Delete_Post"/>
-          <include name="openApp"/>
-          <include name="closeApp"/>
-        </methods>
-      </class> <!-- CompanyScripts.compNewsFeed_Home -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

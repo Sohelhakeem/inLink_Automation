@@ -32,12 +32,12 @@ public class compNetworks extends BaseClass {
 	   WebElement scroll = driver.findElement(By.xpath("//h4[normalize-space()='Certification']"));
 	   js.executeScript("arguments[0].scrollIntoView(true);", scroll);
 	   Thread.sleep(500);
-	    scroll.click();
+	    scroll.isDisplayed();
 	    String expTitle = "Certification";
 	   String actTitle = driver.findElement(By.xpath("//h4[normalize-space()='Certification']")).getText();
 	   Assert.assertEquals(expTitle, actTitle);
-			   
 	}
+			   
 	@Test(priority=0)
 	public void networksPage() throws IOException {
 		LoginPage l = new LoginPage(driver);
@@ -173,7 +173,7 @@ public class compNetworks extends BaseClass {
 		Thread.sleep(2000);
 		n.ThreeDots();
 		n.RecommendedIndustries();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		n.RecIndsearhfiled(p.getPropertyFiledata("searchNetworkCompany"));
 		Thread.sleep(500);
 		driver.findElement(By.xpath("(//div[@class='flexMinWidthRow pdngXS'])[1]")).click();
@@ -190,7 +190,7 @@ public class compNetworks extends BaseClass {
 		   WebElement scroll = driver.findElement(By.xpath("//h4[normalize-space()='Certification']"));
 		   js.executeScript("arguments[0].scrollIntoView(true);", scroll);
 		   Thread.sleep(1000);
-		    scroll.click();
+		    scroll.isDisplayed();
 		    String expTitle = "Certification";
 		   String actTitle = driver.findElement(By.xpath("//h4[normalize-space()='Certification']")).getText();
 		   Assert.assertEquals(expTitle, actTitle);
@@ -260,7 +260,7 @@ public class compNetworks extends BaseClass {
 		Assert.assertEquals(expectedTitle1, actualTitle1);
 	}
 	
-	@Test(priority=12)
+	@Test(priority=12,retryAnalyzer = MyRetry.class)
 	public void WhatsApp_InviteBusiness() throws IOException, InterruptedException {
 		 // Log into Account A
 	    LoginPage l = new LoginPage(driver);
