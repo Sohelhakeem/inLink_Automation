@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="9" total="10" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-07T11:21:25 IST" name="Default suite" finished-at="2023-03-07T11:21:45 IST" duration-ms="20084">
+  <suite started-at="2023-03-08T11:04:56 IST" name="Default suite" finished-at="2023-03-08T11:05:22 IST" duration-ms="25960">
     <groups>
     </groups>
-    <test started-at="2023-03-07T11:21:25 IST" name="Default test" finished-at="2023-03-07T11:21:45 IST" duration-ms="20084">
-      <class name="CompanyScripts.ConfigureDeptScripts">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.ConfigureDeptScripts@3514a4c0]" started-at="2023-03-07T11:21:25 IST" name="openApp" finished-at="2023-03-07T11:21:31 IST" duration-ms="5513" status="PASS">
+    <test started-at="2023-03-08T11:04:56 IST" name="Default test" finished-at="2023-03-08T11:05:22 IST" duration-ms="25960">
+      <class name="CompanyScripts.compNewsFeed_Home">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compNewsFeed_Home@1e683a3e]" started-at="2023-03-08T11:04:56 IST" name="openApp" finished-at="2023-03-08T11:05:01 IST" duration-ms="5160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="create_Dept()[pri:0, instance:CompanyScripts.ConfigureDeptScripts@3514a4c0]" started-at="2023-03-07T11:21:31 IST" name="create_Dept" finished-at="2023-03-07T11:21:45 IST" duration-ms="14145" status="PASS">
+        <test-method signature="BookmaarkPost_Like()[pri:13, instance:CompanyScripts.compNewsFeed_Home@1e683a3e]" started-at="2023-03-08T11:05:01 IST" name="BookmaarkPost_Like" finished-at="2023-03-08T11:05:21 IST" duration-ms="20206" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- create_Dept -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.ConfigureDeptScripts@3514a4c0]" started-at="2023-03-07T11:21:45 IST" name="closeApp" finished-at="2023-03-07T11:21:45 IST" duration-ms="379" status="PASS">
+        </test-method> <!-- BookmaarkPost_Like -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compNewsFeed_Home@1e683a3e]" started-at="2023-03-08T11:05:21 IST" name="closeApp" finished-at="2023-03-08T11:05:22 IST" duration-ms="534" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=create_Dept status=SUCCESS method=ConfigureDeptScripts.create_Dept()[pri:0, instance:CompanyScripts.ConfigureDeptScripts@3514a4c0] output={null}]]]>
+                <![CDATA[[TestResult name=BookmaarkPost_Like status=SUCCESS method=compNewsFeed_Home.BookmaarkPost_Like()[pri:13, instance:CompanyScripts.compNewsFeed_Home@1e683a3e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- CompanyScripts.ConfigureDeptScripts -->
+      </class> <!-- CompanyScripts.compNewsFeed_Home -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

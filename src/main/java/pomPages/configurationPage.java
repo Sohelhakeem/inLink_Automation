@@ -30,6 +30,8 @@ public class configurationPage {
 		private WebElement Create;
 		@FindBy(xpath="//button[normalize-space()='Cancel']")
 		private WebElement Cancel;
+		@FindBy(xpath="//button[normalize-space()='Update']")
+		private WebElement Updata;
 		
 			@FindBy(xpath="//div[@class='flexMinHeightCol pdngXS pointer']")
 			private WebElement openDept;
@@ -67,6 +69,12 @@ public class configurationPage {
 	public void searchDeptField(String name) {
 		searchField.sendKeys(name);
 	}
+	public void searchDivisionField(String name) {
+		searchField.sendKeys(name);
+	}
+	public void searchDesignationField(String name) {
+		searchField.sendKeys(name);
+	}
 	public void Departments() {
 		Departments.click();
 	}
@@ -80,6 +88,9 @@ public class configurationPage {
 			public void EnterName(String name) {
 				EnterName.sendKeys(name);
 			}
+			public void ClearName() {
+				EnterName.clear();
+			}
 			public void EnterDiscription(String name) {
 				EnterDiscription.sendKeys(name);
 			}
@@ -88,6 +99,9 @@ public class configurationPage {
 			}
 			public void Cancel() {
 				Cancel.click();
+			}
+			public void Updata() {
+				Updata.click();
 			}
 					public void openDept() {
 						openDept.click();
@@ -122,10 +136,10 @@ public class configurationPage {
 			public void ConfirmDeleteDivision() {
 				ConfirmDeleteDepartment.click();
 			}
-	public void DeleteDesignation() {
+	public void EditDesignation() {
 		EditDivision.click();
 	}
-	public void EditDesignation() {
+	public void DeleteDesignation() {
 		DeleteDivision.click();
 	}
 			public void CancelDeleteDesignation() {

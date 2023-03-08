@@ -5,7 +5,7 @@
     <classes>
       <class name="CompanyScripts.ConfigureDeptScripts">
         <methods>
-          <include name="create_Dept"/>
+          <include name="Delete_Dept"/>
           <include name="openApp"/>
           <include name="closeApp"/>
         </methods>

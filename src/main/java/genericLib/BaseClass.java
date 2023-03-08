@@ -21,8 +21,17 @@ public class BaseClass {
 	@BeforeMethod
 	public void openApp() throws IOException {
 	WebDriverManager.chromedriver().setup();	
-		
 	driver=new ChromeDriver();
+	
+//	WebDriverManager.operadriver().setup();	
+//	driver=new OperaDriver();
+	
+//	WebDriverManager.firefoxdriver().setup();	
+//	driver=new FirefoxDriver();
+	
+//	WebDriverManager.edgedriver().setup();	
+//	driver=new EdgeDriver();
+	
 	driver.manage().window().maximize();
 	driver.get(p.getPropertyFiledata("url"));
 	driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);

@@ -3,23 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="CompanyScripts.compNetworks">
+      <class name="CompanyScripts.compNewsFeed_Home">
         <methods>
-          <include name="Instagram_InviteBusiness"/>
-          <include name="InviteBusiness"/>
-          <include name="WhatsApp_InviteBusiness"/>
-          <include name="RecInd_NewsFeed"/>
-          <include name="Telegram_InviteBusiness"/>
-          <include name="Facebook_InviteBusiness"/>
-          <include name="CompanyFollow_Unfollow"/>
-          <include name="closeApp"/>
-          <include name="Linkedin_InviteBusiness"/>
-          <include name="Twitter_InviteBusiness"/>
-          <include name="Gmail_InviteBusiness"/>
+          <include name="Delete_Post"/>
           <include name="openApp"/>
-          <include name="Recommanded_Industries"/>
+          <include name="BookmaarkPost_Like"/>
+          <include name="closeApp"/>
         </methods>
-      </class> <!-- CompanyScripts.compNetworks -->
+      </class> <!-- CompanyScripts.compNewsFeed_Home -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
