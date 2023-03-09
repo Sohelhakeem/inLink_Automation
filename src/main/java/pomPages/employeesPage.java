@@ -33,13 +33,13 @@ public class employeesPage {
 			@FindBy(xpath="(//li[@role='menuitem'])[1]")
 			private WebElement admin;
 						@FindBy(xpath="//button[normalize-space()='Grant Team Admin']")
-						private WebElement grantAdmin;
+						public WebElement grantAdmin;
 			@FindBy(xpath="(//span[@id='status'])[2]")
 			private WebElement roleAdmin;
 					@FindBy(xpath="//li[@role='menuitem']")
 					private WebElement employeesrole;
 					@FindBy(xpath="//button[normalize-space()='Remove from Admin']")
-					private WebElement removeAdmin;
+					public WebElement removeAdmin;
 			@FindBy(xpath = "//button[normalize-space()='News Feed']")
 			private WebElement newsFeed;
 					@FindBy(xpath = "(//*[name()='svg'][@aria-label='Back'])[1]")

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CompanyScripts.ConfigureDeptScripts">
+      <class name="CompanyScripts.compNewsFeed_Home">
         <methods>
-          <include name="Delete_Dept"/>
           <include name="openApp"/>
+          <include name="Play_Posted_Video"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- CompanyScripts.ConfigureDeptScripts -->
+      </class> <!-- CompanyScripts.compNewsFeed_Home -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

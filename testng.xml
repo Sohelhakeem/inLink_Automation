@@ -7,6 +7,7 @@
       <class name="CompanyScripts.ConfigureDeptScripts"/>
       <class name="CompanyScripts.compCreatePostScripts"/>
       <class name="CompanyScripts.compNewsFeed_Home"/>
+      <class name="CompanyScripts.compEmployeesScripts"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

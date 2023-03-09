@@ -6,11 +6,39 @@
       <class name="CompanyScripts.compNewsFeed_Home">
         <methods>
           <include name="Delete_Post"/>
+          <include name="Edit_Post"/>
           <include name="openApp"/>
-          <include name="BookmaarkPost_Like"/>
           <include name="closeApp"/>
         </methods>
       </class> <!-- CompanyScripts.compNewsFeed_Home -->
+      <class name="CompanyScripts.ConfigureDeptScripts">
+        <methods>
+          <include name="Delete_Dept"/>
+          <include name="create_Dept"/>
+          <include name="Edit_Dept"/>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- CompanyScripts.ConfigureDeptScripts -->
+      <class name="CompanyScripts.compCreatePostScripts">
+        <methods>
+          <include name="public_ALL_Emp_Part_Share"/>
+          <include name="upload_FivePlus_Images"/>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+          <include name="UploadText"/>
+        </methods>
+      </class> <!-- CompanyScripts.compCreatePostScripts -->
+      <class name="CompanyScripts.compEmployeesScripts">
+        <methods>
+          <include name="InviteWithEmail_send"/>
+          <include name="openApp"/>
+          <include name="ChangeRoleAs_Admin"/>
+          <include name="Edit_Official_Details"/>
+          <include name="ChangeRoleAs_Employee"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- CompanyScripts.compEmployeesScripts -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -3,14 +3,39 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="CompanyScripts.compNetworks">
+      <class name="CompanyScripts.compEmployeesScripts">
         <methods>
-          <include name="WhatsApp_InviteBusiness"/>
+          <include name="InviteWithEmail_send"/>
           <include name="openApp"/>
-          <include name="CompanyFollow_Unfollow"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- CompanyScripts.compNetworks -->
+      </class> <!-- CompanyScripts.compEmployeesScripts -->
+      <class name="CompanyScripts.compNewsFeed_Home">
+        <methods>
+          <include name="Delete_Post"/>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- CompanyScripts.compNewsFeed_Home -->
+      <class name="CompanyScripts.compCreatePostScripts">
+        <methods>
+          <include name="public_ALL_Emp_Part_Share"/>
+          <include name="upload_FivePlus_Images"/>
+          <include name="public_Share_holder"/>
+          <include name="openApp"/>
+          <include name="UploadImageAndCancel"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- CompanyScripts.compCreatePostScripts -->
+      <class name="CompanyScripts.ConfigureDeptScripts">
+        <methods>
+          <include name="Delete_Dept"/>
+          <include name="create_Dept"/>
+          <include name="Edit_Dept"/>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- CompanyScripts.ConfigureDeptScripts -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

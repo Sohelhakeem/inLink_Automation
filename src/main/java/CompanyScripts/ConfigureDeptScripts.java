@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import genericLib.BaseClass;
 import pomPages.LoginPage;
 import pomPages.configurationPage;
+import pomPages.employeesPage;
 
 public class ConfigureDeptScripts extends BaseClass{
 
@@ -112,7 +113,6 @@ public class ConfigureDeptScripts extends BaseClass{
 		Thread.sleep(1000);
 		String text = driver.findElement(By.xpath("//div[contains(text(),'Department Deleted Successfully')]")).getText();
 		Assert.assertEquals(text, "Department Deleted Successfully");
-		
-		
 	}
+		
 }
