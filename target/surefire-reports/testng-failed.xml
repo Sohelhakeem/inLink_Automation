@@ -3,42 +3,23 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="CompanyScripts.compNewsFeed_Home">
+      <class name="CompanyScripts.resourcesScripts">
         <methods>
-          <include name="Delete_Post"/>
-          <include name="Edit_Post"/>
-          <include name="openApp"/>
+          <include name="AllFilter"/>
+          <include name="Create_category"/>
+          <include name="Delete_Category"/>
           <include name="closeApp"/>
-        </methods>
-      </class> <!-- CompanyScripts.compNewsFeed_Home -->
-      <class name="CompanyScripts.ConfigureDeptScripts">
-        <methods>
-          <include name="Delete_Dept"/>
-          <include name="create_Dept"/>
-          <include name="Edit_Dept"/>
+          <include name="ResourcesPage"/>
+          <include name="EnabledFilter"/>
+          <include name="Create_Content"/>
+          <include name="DisableFilter"/>
           <include name="openApp"/>
-          <include name="closeApp"/>
+          <include name="Create_Category"/>
+          <include name="CreateSub_Category"/>
+          <include name="Delete_Content"/>
+          <include name="Update_Category"/>
         </methods>
-      </class> <!-- CompanyScripts.ConfigureDeptScripts -->
-      <class name="CompanyScripts.compCreatePostScripts">
-        <methods>
-          <include name="public_ALL_Emp_Part_Share"/>
-          <include name="upload_FivePlus_Images"/>
-          <include name="openApp"/>
-          <include name="closeApp"/>
-          <include name="UploadText"/>
-        </methods>
-      </class> <!-- CompanyScripts.compCreatePostScripts -->
-      <class name="CompanyScripts.compEmployeesScripts">
-        <methods>
-          <include name="InviteWithEmail_send"/>
-          <include name="openApp"/>
-          <include name="ChangeRoleAs_Admin"/>
-          <include name="Edit_Official_Details"/>
-          <include name="ChangeRoleAs_Employee"/>
-          <include name="closeApp"/>
-        </methods>
-      </class> <!-- CompanyScripts.compEmployeesScripts -->
+      </class> <!-- CompanyScripts.resourcesScripts -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -3,11 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="CompanyScripts.compNetworks"/>
-      <class name="CompanyScripts.ConfigureDeptScripts"/>
-      <class name="CompanyScripts.compCreatePostScripts"/>
-      <class name="CompanyScripts.compNewsFeed_Home"/>
-      <class name="CompanyScripts.compEmployeesScripts"/>
+      <class name="CompanyScripts.resourcesScripts"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

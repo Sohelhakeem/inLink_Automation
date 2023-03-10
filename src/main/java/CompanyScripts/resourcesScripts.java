@@ -18,7 +18,7 @@ import pomPages.createSubCategoryPage;
 
 public class resourcesScripts extends BaseClass {
 	@Test(priority=1)
-	public void resourcesPage() throws IOException {
+	public void ResourcesPage() throws IOException {
 		LoginPage l = new LoginPage(driver);
 		l.email_TF(p.getPropertyFiledata("emailid"));
 		l.password_TF(p.getPropertyFiledata("password"));
@@ -232,6 +232,122 @@ public class resourcesScripts extends BaseClass {
 		String actualText3 = text3.getText();
 		Assert.assertEquals(actualText3, "Content created successfully");
 		
+	}
+	@Test(priority=8)
+	public void Delete_Content() throws IOException, InterruptedException {
+		LoginPage l = new LoginPage(driver);
+		l.email_TF(p.getPropertyFiledata("emailid"));
+		l.password_TF(p.getPropertyFiledata("password"));
+		l.LoginButton();
+		
+		ResourcesPage r = new ResourcesPage(driver);
+		//search and select the category
+		r.ResourcePage();
+		r.Searchfield(p.getPropertyFiledata("categotyName"));
+		String categoryname = p.getPropertyFiledata("categotyName");
+		WebElement name = driver.findElement(By.xpath("//span[@aria-label='"+categoryname+"']"));
+		name.isDisplayed();
+		name.click();
+		
+		//createSubCategoryPage cs = new createSubCategoryPage(driver);
+		WebElement text0 = new WebDriverWait(driver, 10)
+		         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[normalize-space()='"+categoryname+"']")));
+		text0.isDisplayed();
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement deletesub = driver.findElement(By.xpath("//div[contains(@aria-label,'Delete')]//*[name()='svg']"));
+		js.executeScript("arguments[0].scrollIntoView(true);", deletesub);
+		Thread.sleep(500);
+		//js.executeScript("arguments[0].click();", deletesub);
+		deletesub.click();
+		WebElement delete = driver.findElement(By.xpath("//button[normalize-space()='Delete']"));
+		delete.click();
+		
+		WebElement text = new WebDriverWait(driver, 10)
+		         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Sub Category Deleted Succesfully')]")));
+		String actualText = text.getText();
+		Assert.assertEquals(actualText, "Sub Category Deleted Succesfully");
+		
+		driver.findElement(By.xpath("//*[name()='path' and contains(@fill-rule,'evenodd')]")).click();
+		
+		WebElement contentopen = driver.findElement(By.xpath("//span[@class='ellipseLen2 wordBreakWord']"));
+		js.executeScript("arguments[0].scrollIntoView(true);", contentopen);
+		Thread.sleep(500);
+		//js.executeScript("arguments[0].click();", deletesub);
+		contentopen.click();
+		
+		WebElement contentdelete = driver.findElement(By.xpath("//div[@aria-label='Delete']//*[name()='svg']"));
+		js.executeScript("arguments[0].scrollIntoView(false);", contentdelete);
+		Thread.sleep(1000);
+		contentdelete.click();
+		Thread.sleep(1000);
+		WebElement deletee = driver.findElement(By.xpath("//button[normalize-space()='Delete']"));
+		deletee.click();
+		
+		WebElement text1 = new WebDriverWait(driver, 10)
+		         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Content and its sections deleted succesfully')]")));
+		String actualText1 = text1.getText();
+		Assert.assertEquals(actualText1, "Content and its sections deleted succesfully");
+		
+        }
+	@Test(priority=9,invocationCount= 0)
+	public void Delete_Categoryy() throws IOException {
+		LoginPage l = new LoginPage(driver);
+		l.email_TF(p.getPropertyFiledata("emailid"));
+		l.password_TF(p.getPropertyFiledata("password"));
+		l.LoginButton();
+		
+		ResourcesPage r = new ResourcesPage(driver);
+		r.ResourcePage();
+		r.Searchfield(p.getPropertyFiledata("categotyName"));
+		r.Delete();
+		r.ConfDelete();
+		
+		WebElement text = new WebDriverWait(driver, 10)
+		         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Category Deleted Succesfully')]")));
+		String actualText = text.getText();
+		
+		//Assert.assertEquals(actualText, "Category Deleted Successfully");
+		Assert.assertEquals(actualText, "Category Deleted Succesfully");
+	}
+	@Test(priority=10)
+	public void AllFilter() throws IOException, InterruptedException {
+		LoginPage l = new LoginPage(driver);
+		l.email_TF(p.getPropertyFiledata("emailid"));
+		l.password_TF(p.getPropertyFiledata("password"));
+		l.LoginButton();
+		
+		ResourcesPage r = new ResourcesPage(driver);
+		//search and select the category
+		r.ResourcePage();
+		r.Filter();
+		r.AllFilter();
+	}
+	@Test(priority=11)
+	public void EnabledFilter() throws IOException, InterruptedException {
+		LoginPage l = new LoginPage(driver);
+		l.email_TF(p.getPropertyFiledata("emailid"));
+		l.password_TF(p.getPropertyFiledata("password"));
+		l.LoginButton();
+		
+		ResourcesPage r = new ResourcesPage(driver);
+		//search and select the category
+		r.ResourcePage();
+		r.Filter();
+		r.EnabledFilter();
+	}
+	@Test(priority=12)
+	public void DisableFilter() throws IOException, InterruptedException {
+		LoginPage l = new LoginPage(driver);
+		l.email_TF(p.getPropertyFiledata("emailid"));
+		l.password_TF(p.getPropertyFiledata("password"));
+		l.LoginButton();
+		
+		ResourcesPage r = new ResourcesPage(driver);
+		//search and select the category
+		r.ResourcePage();
+		r.Filter();
+		r.DisableFilter();
 	}
 
 }

@@ -18,7 +18,7 @@ import pomPages.createCategoryPage;
 import pomPages.createSubCategoryPage;
 
 public class ResourcesCreateCategory extends BaseClass {
-	@Test(retryAnalyzer = MyRetry.class)
+	@Test(priority=1,retryAnalyzer = MyRetry.class)
 	public void CreateSub_Category() throws IOException, InterruptedException {
 		LoginPage l = new LoginPage(driver);
 		l.email_TF(p.getPropertyFiledata("emailid"));

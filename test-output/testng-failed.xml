@@ -5,11 +5,9 @@
     <classes>
       <class name="CompanyScripts.resourcesScripts">
         <methods>
-          <include name="Delete_Category"/>
-          <include name="Create_Content"/>
           <include name="openApp"/>
-          <include name="CreateSub_Category"/>
           <include name="closeApp"/>
+          <include name="ResourcesPage"/>
         </methods>
       </class> <!-- CompanyScripts.resourcesScripts -->
     </classes>
