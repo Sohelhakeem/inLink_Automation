@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CompanyScripts.test">
+      <class name="CompanyScripts.resourcesScripts">
         <methods>
-          <include name="CreateSub_Category"/>
+          <include name="Delete_Category"/>
+          <include name="Create_Content"/>
           <include name="openApp"/>
+          <include name="CreateSub_Category"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- CompanyScripts.test -->
+      </class> <!-- CompanyScripts.resourcesScripts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

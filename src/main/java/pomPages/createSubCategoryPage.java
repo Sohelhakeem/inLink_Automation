@@ -21,6 +21,8 @@ public class createSubCategoryPage {
 		
 		@FindBy(xpath = "//input[@type='checkbox']")
 		private WebElement checkboxBtn;
+			@FindBy(xpath = "//input[@type='checkbox']")
+			public WebElement checkboxBtnPath;
 		
 		public WebElement getCheckboxBtn() {
 			return checkboxBtn;
@@ -29,7 +31,9 @@ public class createSubCategoryPage {
 		private WebElement CancelCategory;
 		
 		@FindBy(xpath = "//button[normalize-space()='Save']")
-		public WebElement SaveCategory;
+		private WebElement SaveCategory;
+			@FindBy(xpath = "//button[normalize-space()='Save']")
+			public WebElement SaveCategoryPath;
 		
 	public WebElement getSaveCategory() {
 			return SaveCategory;
@@ -38,7 +42,9 @@ public class createSubCategoryPage {
 	
 //Create Content
 	@FindBy (xpath="//button[@title='To create content click on this button']")
-	public  WebElement Newcontent;
+	private  WebElement Newcontent;
+		@FindBy (xpath="//button[@title='To create content click on this button']")
+		public  WebElement NewcontentPath;
 		
 		@FindBy (xpath="//input[@id='preview']")
 		private  WebElement uploadPic;
@@ -70,7 +76,9 @@ public class createSubCategoryPage {
 		@FindBy (xpath="(//input[@type='text'])[4]")
 		private  WebElement youtubeUrl;
 				@FindBy (xpath="//button[normalize-space()='Upload']")
-				private  WebElement UploadyoutubeUrl;
+				private  WebElement UploadyoutubeUrlButton;
+				@FindBy (xpath="//button[normalize-space()='Upload']")
+				public  WebElement youtubeUrlbuttonPath;
 		
 		@FindBy (xpath="//input[@id='videoType']")
 		private  WebElement Uploadvideo;
@@ -160,8 +168,8 @@ public class createSubCategoryPage {
 		public void youtubeUrlField(String name) {
 			youtubeUrl.sendKeys(name);
 		}
-				public void UploadyoutubeUrl() {
-					UploadyoutubeUrl.click();
+				public void UploadyoutubeUrlButton() {
+					UploadyoutubeUrlButton.click();
 				}
 		public void Uploadvideo(String name) {
 			Uploadvideo.sendKeys(name);
