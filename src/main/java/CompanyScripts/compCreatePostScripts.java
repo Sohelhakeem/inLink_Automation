@@ -428,6 +428,7 @@ public class compCreatePostScripts extends BaseClass{
 			 int y=tf.getY();
 			driverutilies.scrollbar(driver, x, y);
 			cn.textContentField("public_Vendor");
+			Thread.sleep(500);
 			Point pblc = cn.getPublicBtn().getLocation();
 			 int x1 = pblc.getX();
 			 int y1 =pblc.getY();

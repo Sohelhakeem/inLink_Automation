@@ -58,7 +58,7 @@ public class compEmployeesScripts extends BaseClass {
 		e.ActiveSearchField(p.getPropertyFiledata("activeEmpName"));
 		Thread.sleep(500);
 		String actualText1 =driver.findElement(By.xpath("//span[normalize-space()='(admin)']")).getText();
-		Assert.assertEquals(actualText1, "(admin)");
+		Assert.assertEquals(actualText1, "(Admin)");
 		
 
 	}

@@ -6,17 +6,16 @@
       <class name="CompanyScripts.resourcesScripts">
         <methods>
           <include name="AllFilter"/>
+          <include name="EnabledFilter"/>
           <include name="Create_category"/>
           <include name="Delete_Category"/>
-          <include name="closeApp"/>
-          <include name="ResourcesPage"/>
-          <include name="EnabledFilter"/>
           <include name="Create_Content"/>
           <include name="DisableFilter"/>
           <include name="openApp"/>
           <include name="Create_Category"/>
           <include name="CreateSub_Category"/>
           <include name="Delete_Content"/>
+          <include name="closeApp"/>
           <include name="Update_Category"/>
         </methods>
       </class> <!-- CompanyScripts.resourcesScripts -->
