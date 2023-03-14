@@ -223,7 +223,7 @@ public class compCreatePostScripts extends BaseClass{
  		String actual_Text1 = driver.findElement(By.xpath("//span[@class='mainHdngTxt']")).getText();
  		Assert.assertEquals(expected_Text1, actual_Text1);
 	}	
-	@Test(priority=9)
+	@Test(priority=9,retryAnalyzer=MyRetry.class)
 	public void public_Manaufacturer() throws IOException, InterruptedException {
 		LoginPage l=new LoginPage(driver);
 		l.email_TF(p.getPropertyFiledata("emailid"));

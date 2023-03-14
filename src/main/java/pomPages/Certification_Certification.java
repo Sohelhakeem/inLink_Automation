@@ -7,7 +7,13 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Certification_Certification {
 
-	@FindBy (xpath = "//input[@type='text'])[1]")
+	@FindBy (xpath = "//input[@type='search']")
+	private WebElement search;
+	
+	@FindBy (xpath = "//div[@class='flexRow whiteBg brdrRadiusXSM pdngSM hrztlScroll']//div[2]")
+	private WebElement certification;
+	
+	@FindBy (xpath = "(//input[@type='text'])[1]")
 	private WebElement programName;
 	
 	@FindBy (xpath = "//div[@class='ql-editor ql-blank']")
@@ -16,8 +22,10 @@ public class Certification_Certification {
 	@FindBy (xpath = "//div[@class='flexRow respdngSM customResponsive']//div[2]//div[1]//div[1]//div[1]//div[1]//label[1]//span[1]//span[1]//*[name()='svg']")
 	private WebElement SelectCategory;
 	
-	@FindBy (xpath = "(//div[@id='demo-simple-select'])[1]")
+	@FindBy (xpath = "//div[contains(@class,'flexRow pdngVXS')]//div[contains(@class,'MuiFormControl-root MuiFormControl-fullWidth css-tzsjye')]")
 	private WebElement SelectMarketingSystem;
+		@FindBy (xpath = "//div[contains(@class,'flexRow pdngVXS')]//div[contains(@class,'MuiFormControl-root MuiFormControl-fullWidth css-tzsjye')]")
+		public WebElement DisplaySelectMarketingSystem;
 	
 			@FindBy (xpath = "(//input[@type='text'])[3]")
 			private WebElement NeedField1;
@@ -33,20 +41,24 @@ public class Certification_Certification {
 	
 	@FindBy (xpath = "(//div[@id='demo-simple-select'])[2]")
 	private WebElement durationHrsDD;
-			@FindBy (xpath = "//li[normalize-space()='00']")
+			@FindBy (xpath = "(//li[normalize-space()='00'])[1]")
 			private WebElement Select00Hrs;
 	@FindBy (xpath = "(//div[@id='demo-simple-select'])[3]")
 	private WebElement durationMinDD;
 			@FindBy (xpath = "//li[normalize-space()='05']")
 			private WebElement Select05min;
 	
-	@FindBy (xpath="(//div[@id='demo-simple-select'])[4]")
+	@FindBy (xpath="//*[@id=\"root\"]/div/div[1]/div[2]/div[2]/div[2]/div[2]/div/div/div[2]/div[1]/div[13]/div/div")
 	private WebElement QuestionChoiceTypeDD;
+		@FindBy (xpath="(//div[@id='demo-simple-select'])[4]")
+		public WebElement DisplayQuestionChoiceTypeDD;
 			@FindBy (xpath="//li[normalize-space()='A , B']")
 			private WebElement QuestionChoiceTypeAB;
 	
 	@FindBy (xpath="//div[@id='demo-simple-select-Template']")
 	private WebElement Template;
+	@FindBy (xpath="//div[@id='demo-simple-select-Template']")
+	public WebElement DisTemplate;
 		@FindBy (xpath="//li[normalize-space()='Core Java Programming']")
 		private WebElement selectTemplate;
 		@FindBy (xpath="//div[@class='templatemediaOverlay']")
@@ -59,6 +71,8 @@ public class Certification_Certification {
 		
 	@FindBy (xpath="//button[normalize-space()='Publish']")
 	private WebElement Publish;
+		@FindBy (xpath="//button[normalize-space()='Publish']")
+		public WebElement DisplayPublish;
 	
 	@FindBy (xpath="//button[contains(@class,'MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1m44q5')][normalize-space()='Publish']")
 	private WebElement ConfirmPublish;
@@ -67,6 +81,12 @@ public class Certification_Certification {
 		PageFactory.initElements(driver, this);
 	}
 	
+	public void  certification() {
+		certification.click();
+	}
+	public void  search(String name) {
+		search.sendKeys(name);
+	}
 	public void  programName(String name) {
 		programName.sendKeys(name);
 	}
@@ -79,8 +99,8 @@ public class Certification_Certification {
 	public void SelectMarketingSystem() {
 		SelectMarketingSystem.click();
 	}
-	public void  NeedField1(String name) {
-		NeedField1.sendKeys(name);
+	public void  NeedField1(String name, String clear) {
+		NeedField1.sendKeys(name, clear);
 	}
 	public void  NeedField2(String name) {
 		NeedField2.sendKeys(name);

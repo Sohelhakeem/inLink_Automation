@@ -1,222 +1,181 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-10T17:56:38 IST" name="Suite" finished-at="2023-03-10T17:59:17 IST" duration-ms="158877">
+  <suite started-at="2023-03-14T14:47:46 IST" name="Suite" finished-at="2023-03-14T14:49:25 IST" duration-ms="99609">
     <groups>
     </groups>
-    <test started-at="2023-03-10T17:56:38 IST" name="Test" finished-at="2023-03-10T17:59:17 IST" duration-ms="158877">
-      <class name="CompanyScripts.resourcesScripts">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:56:39 IST" name="openApp" finished-at="2023-03-10T17:56:44 IST" duration-ms="5939" status="PASS">
+    <test started-at="2023-03-14T14:47:46 IST" name="Test" finished-at="2023-03-14T14:49:25 IST" duration-ms="99609">
+      <class name="CompanyScripts.compCertification">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compCertification@309e345f]" started-at="2023-03-14T14:47:46 IST" name="openApp" finished-at="2023-03-14T14:47:50 IST" duration-ms="4796" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="ResourcesPage()[pri:1, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:56:44 IST" name="ResourcesPage" finished-at="2023-03-10T17:56:49 IST" duration-ms="4025" status="PASS">
+        <test-method signature="CertificationPage()[pri:1, instance:CompanyScripts.compCertification@309e345f]" started-at="2023-03-14T14:47:50 IST" name="CertificationPage" finished-at="2023-03-14T14:47:57 IST" duration-ms="6050" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ResourcesPage -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:56:49 IST" name="closeApp" finished-at="2023-03-10T17:56:49 IST" duration-ms="363" status="PASS">
+        </test-method> <!-- CertificationPage -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compCertification@309e345f]" started-at="2023-03-14T14:47:57 IST" name="closeApp" finished-at="2023-03-14T14:47:58 IST" duration-ms="1265" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ResourcesPage status=SUCCESS method=resourcesScripts.ResourcesPage()[pri:1, instance:CompanyScripts.resourcesScripts@6193932a] output={null}]]]>
+                <![CDATA[[TestResult name=CertificationPage status=SUCCESS method=compCertification.CertificationPage()[pri:1, instance:CompanyScripts.compCertification@309e345f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:56:49 IST" name="openApp" finished-at="2023-03-10T17:56:53 IST" duration-ms="4382" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compCertification@309e345f]" started-at="2023-03-14T14:47:58 IST" name="openApp" finished-at="2023-03-14T14:48:02 IST" duration-ms="4688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="Create_Category()[pri:2, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:56:53 IST" name="Create_Category" finished-at="2023-03-10T17:57:03 IST" duration-ms="9528" status="PASS">
+        <test-method signature="CreateMarketing_SystemDelete()[pri:2, instance:CompanyScripts.compCertification@309e345f]" started-at="2023-03-14T14:48:02 IST" name="CreateMarketing_SystemDelete" finished-at="2023-03-14T14:48:11 IST" duration-ms="8635" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Create_Category -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:57:03 IST" name="closeApp" finished-at="2023-03-10T17:57:03 IST" duration-ms="603" status="PASS">
+        </test-method> <!-- CreateMarketing_SystemDelete -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compCertification@309e345f]" started-at="2023-03-14T14:48:11 IST" name="closeApp" finished-at="2023-03-14T14:48:11 IST" duration-ms="263" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Create_Category status=SUCCESS method=resourcesScripts.Create_Category()[pri:2, instance:CompanyScripts.resourcesScripts@6193932a] output={null}]]]>
+                <![CDATA[[TestResult name=CreateMarketing_SystemDelete status=SUCCESS method=compCertification.CreateMarketing_SystemDelete()[pri:2, instance:CompanyScripts.compCertification@309e345f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:57:03 IST" name="openApp" finished-at="2023-03-10T17:57:08 IST" duration-ms="4305" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compCertification@309e345f]" started-at="2023-03-14T14:48:11 IST" name="openApp" finished-at="2023-03-14T14:48:16 IST" duration-ms="4580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="Update_Category()[pri:3, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:57:08 IST" name="Update_Category" finished-at="2023-03-10T17:57:19 IST" duration-ms="10910" status="PASS">
+        <test-method signature="CreateQuestionBankDelete()[pri:3, instance:CompanyScripts.compCertification@309e345f]" started-at="2023-03-14T14:48:16 IST" name="CreateQuestionBankDelete" finished-at="2023-03-14T14:48:34 IST" duration-ms="18311" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='flexInline headingSM pointer brdrBlackSM brdrRadiusXSM mcPdng']"}
+  (Session info: chrome=110.0.5481.180)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TEST-010', ip: '172.16.16.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\SOHEL~1.TES\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:55500}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dd692f45466949165ae10b147c8b8d40
+*** Element info: {Using=xpath, value=//span[@class='flexInline headingSM pointer brdrBlackSM brdrRadiusXSM mcPdng']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='flexInline headingSM pointer brdrBlackSM brdrRadiusXSM mcPdng']"}
+  (Session info: chrome=110.0.5481.180)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'TEST-010', ip: '172.16.16.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.180, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\SOHEL~1.TES\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:55500}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dd692f45466949165ae10b147c8b8d40
+*** Element info: {Using=xpath, value=//span[@class='flexInline headingSM pointer brdrBlackSM brdrRadiusXSM mcPdng']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at CompanyScripts.compCertification.CreateQuestionBankDelete(compCertification.java:110)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Update_Category -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:57:19 IST" name="closeApp" finished-at="2023-03-10T17:57:19 IST" duration-ms="466" status="PASS">
+        </test-method> <!-- CreateQuestionBankDelete -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compCertification@309e345f]" started-at="2023-03-14T14:48:34 IST" name="closeApp" finished-at="2023-03-14T14:48:35 IST" duration-ms="911" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Update_Category status=SUCCESS method=resourcesScripts.Update_Category()[pri:3, instance:CompanyScripts.resourcesScripts@6193932a] output={null}]]]>
+                <![CDATA[[TestResult name=CreateQuestionBankDelete status=FAILURE method=compCertification.CreateQuestionBankDelete()[pri:3, instance:CompanyScripts.compCertification@309e345f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:57:19 IST" name="openApp" finished-at="2023-03-10T17:57:23 IST" duration-ms="3836" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compCertification@309e345f]" started-at="2023-03-14T14:48:35 IST" name="openApp" finished-at="2023-03-14T14:48:40 IST" duration-ms="4391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="Delete_Category()[pri:4, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:57:23 IST" name="Delete_Category" finished-at="2023-03-10T17:57:31 IST" duration-ms="7881" status="PASS">
+        <test-method signature="CreateTemplatDelete()[pri:4, instance:CompanyScripts.compCertification@309e345f]" started-at="2023-03-14T14:48:40 IST" name="CreateTemplatDelete" finished-at="2023-03-14T14:48:56 IST" duration-ms="16648" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Delete_Category -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:57:31 IST" name="closeApp" finished-at="2023-03-10T17:57:32 IST" duration-ms="1194" status="PASS">
+        </test-method> <!-- CreateTemplatDelete -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compCertification@309e345f]" started-at="2023-03-14T14:48:56 IST" name="closeApp" finished-at="2023-03-14T14:48:57 IST" duration-ms="346" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Delete_Category status=SUCCESS method=resourcesScripts.Delete_Category()[pri:4, instance:CompanyScripts.resourcesScripts@6193932a] output={null}]]]>
+                <![CDATA[[TestResult name=CreateTemplatDelete status=SUCCESS method=compCertification.CreateTemplatDelete()[pri:4, instance:CompanyScripts.compCertification@309e345f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:57:32 IST" name="openApp" finished-at="2023-03-10T17:57:36 IST" duration-ms="3721" status="PASS">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.compCertification@309e345f]" started-at="2023-03-14T14:48:57 IST" name="openApp" finished-at="2023-03-14T14:49:01 IST" duration-ms="4374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="Create_category()[pri:5, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:57:36 IST" name="Create_category" finished-at="2023-03-10T17:57:44 IST" duration-ms="8066" status="PASS">
+        <test-method signature="CreateCertificationDelete()[pri:5, instance:CompanyScripts.compCertification@309e345f]" started-at="2023-03-14T14:49:01 IST" name="CreateCertificationDelete" finished-at="2023-03-14T14:49:25 IST" duration-ms="23849" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Create_category -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:57:44 IST" name="closeApp" finished-at="2023-03-10T17:57:44 IST" duration-ms="370" status="PASS">
+        </test-method> <!-- CreateCertificationDelete -->
+        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.compCertification@309e345f]" started-at="2023-03-14T14:49:25 IST" name="closeApp" finished-at="2023-03-14T14:49:25 IST" duration-ms="421" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Create_category status=SUCCESS method=resourcesScripts.Create_category()[pri:5, instance:CompanyScripts.resourcesScripts@6193932a] output={null}]]]>
+                <![CDATA[[TestResult name=CreateCertificationDelete status=SUCCESS method=compCertification.CreateCertificationDelete()[pri:5, instance:CompanyScripts.compCertification@309e345f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:57:44 IST" name="openApp" finished-at="2023-03-10T17:57:48 IST" duration-ms="4248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="CreateSub_Category()[pri:6, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:57:48 IST" name="CreateSub_Category" finished-at="2023-03-10T17:58:00 IST" duration-ms="11510" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateSub_Category -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:58:00 IST" name="closeApp" finished-at="2023-03-10T17:58:01 IST" duration-ms="887" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=CreateSub_Category status=SUCCESS method=resourcesScripts.CreateSub_Category()[pri:6, instance:CompanyScripts.resourcesScripts@6193932a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:58:01 IST" name="openApp" finished-at="2023-03-10T17:58:05 IST" duration-ms="3851" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="Create_Content()[pri:7, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:58:05 IST" name="Create_Content" finished-at="2023-03-10T17:58:28 IST" duration-ms="23128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Create_Content -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:58:28 IST" name="closeApp" finished-at="2023-03-10T17:58:28 IST" duration-ms="367" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Create_Content status=SUCCESS method=resourcesScripts.Create_Content()[pri:7, instance:CompanyScripts.resourcesScripts@6193932a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:58:28 IST" name="openApp" finished-at="2023-03-10T17:58:32 IST" duration-ms="3997" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="Delete_Content()[pri:8, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:58:32 IST" name="Delete_Content" finished-at="2023-03-10T17:58:48 IST" duration-ms="15476" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Delete_Content -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:58:48 IST" name="closeApp" finished-at="2023-03-10T17:58:48 IST" duration-ms="321" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Delete_Content status=SUCCESS method=resourcesScripts.Delete_Content()[pri:8, instance:CompanyScripts.resourcesScripts@6193932a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:58:48 IST" name="openApp" finished-at="2023-03-10T17:58:52 IST" duration-ms="4430" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="AllFilter()[pri:10, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:58:52 IST" name="AllFilter" finished-at="2023-03-10T17:58:59 IST" duration-ms="6448" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AllFilter -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:58:59 IST" name="closeApp" finished-at="2023-03-10T17:58:59 IST" duration-ms="297" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=AllFilter status=SUCCESS method=resourcesScripts.AllFilter()[pri:10, instance:CompanyScripts.resourcesScripts@6193932a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:58:59 IST" name="openApp" finished-at="2023-03-10T17:59:03 IST" duration-ms="3578" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="EnabledFilter()[pri:11, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:59:03 IST" name="EnabledFilter" finished-at="2023-03-10T17:59:08 IST" duration-ms="5202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnabledFilter -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:59:08 IST" name="closeApp" finished-at="2023-03-10T17:59:08 IST" duration-ms="260" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=EnabledFilter status=SUCCESS method=resourcesScripts.EnabledFilter()[pri:11, instance:CompanyScripts.resourcesScripts@6193932a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-        <test-method is-config="true" signature="openApp()[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:59:08 IST" name="openApp" finished-at="2023-03-10T17:59:12 IST" duration-ms="3609" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="DisableFilter()[pri:12, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:59:12 IST" name="DisableFilter" finished-at="2023-03-10T17:59:17 IST" duration-ms="5312" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DisableFilter -->
-        <test-method is-config="true" signature="closeApp(org.testng.ITestResult)[pri:0, instance:CompanyScripts.resourcesScripts@6193932a]" started-at="2023-03-10T17:59:17 IST" name="closeApp" finished-at="2023-03-10T17:59:17 IST" duration-ms="286" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=DisableFilter status=SUCCESS method=resourcesScripts.DisableFilter()[pri:12, instance:CompanyScripts.resourcesScripts@6193932a] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- CompanyScripts.resourcesScripts -->
+      </class> <!-- CompanyScripts.compCertification -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

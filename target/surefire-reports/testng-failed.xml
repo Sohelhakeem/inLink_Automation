@@ -3,22 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="CompanyScripts.resourcesScripts">
+      <class name="CompanyScripts.compCertification">
         <methods>
-          <include name="AllFilter"/>
-          <include name="EnabledFilter"/>
-          <include name="Create_category"/>
-          <include name="Delete_Category"/>
-          <include name="Create_Content"/>
-          <include name="DisableFilter"/>
           <include name="openApp"/>
-          <include name="Create_Category"/>
-          <include name="CreateSub_Category"/>
-          <include name="Delete_Content"/>
           <include name="closeApp"/>
-          <include name="Update_Category"/>
+          <include name="CreateQuestionBankDelete"/>
         </methods>
-      </class> <!-- CompanyScripts.resourcesScripts -->
+      </class> <!-- CompanyScripts.compCertification -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

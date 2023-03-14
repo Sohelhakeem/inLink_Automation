@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -18,6 +19,7 @@ import genericLib.BaseClass;
 import pomPages.MarketingSystem_Certification;
 import pomPages.QuestionBank_Certification;
 import pomPages.Templates_Certification;
+import pomPages.Certification_Certification;
 import pomPages.LoginPage;
 
 public class compCertification extends BaseClass {
@@ -34,7 +36,7 @@ public class compCertification extends BaseClass {
 		Assert.assertEquals(actual, "Certification Programme");
 	}
 	@Test(priority=2)
-	public void Marketing_System() throws IOException {
+	public void CreateMarketing_SystemDelete() throws IOException {
 		LoginPage l = new LoginPage(driver);
 		l.email_TF(p.getPropertyFiledata("emailid"));
 		l.password_TF(p.getPropertyFiledata("password"));
@@ -69,7 +71,7 @@ public class compCertification extends BaseClass {
 		driver.findElement(By.xpath("//button[@class='Toastify__close-button Toastify__close-button--light']")).click();
 	}
 	@Test(priority=3)
-	public void CreateQuestionBank() throws IOException, AWTException, InterruptedException {
+	public void CreateQuestionBankDelete() throws IOException, AWTException, InterruptedException {
 		LoginPage l = new LoginPage(driver);
 		l.email_TF(p.getPropertyFiledata("emailid"));
 		l.password_TF(p.getPropertyFiledata("password"));
@@ -128,8 +130,10 @@ public class compCertification extends BaseClass {
 		WebElement Edit = driver.findElement(By.xpath("//div[@id='basic-menu']//li[1]"));
 		Edit.isDisplayed();
 		Thread.sleep(500);
-		WebElement Delete = driver.findElement(By.xpath("(//li[@role='menuitem'])[4]"));
-		Delete.click();
+		WebElement Delete = new WebDriverWait(driver, 10)
+		         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='basic-menu']//li[4]")));
+		js.executeScript("arguments[0].click();", Delete);
+//		Delete.click();
 		ms.ConfirmDelete();
 		
 		WebElement text = new WebDriverWait(driver, 10)
@@ -137,8 +141,9 @@ public class compCertification extends BaseClass {
 		String actualText = text.getText();
 		Assert.assertEquals(actualText, "Deleted Successfully");
 		}
+	
 	@Test(priority=4)
-	public void CreateTemplate() throws IOException, AWTException, InterruptedException {
+	public void CreateTemplatDelete() throws IOException, AWTException, InterruptedException {
 		LoginPage l = new LoginPage(driver);
 		l.email_TF(p.getPropertyFiledata("emailid"));
 		l.password_TF(p.getPropertyFiledata("password"));
@@ -181,6 +186,97 @@ public class compCertification extends BaseClass {
 		Assert.assertEquals(actualText, "Deleted Successfully");
 		}
 	
-
+	@Test(priority=5)
+	public void CreateCertificationDelete() throws IOException, AWTException, InterruptedException {
+		LoginPage l = new LoginPage(driver);
+		l.email_TF(p.getPropertyFiledata("emailid"));
+		l.password_TF(p.getPropertyFiledata("password"));
+		l.LoginButton();
+		MarketingSystem_Certification ms = new MarketingSystem_Certification(driver);
+		ms.certificationModule();
+		Certification_Certification cc = new Certification_Certification(driver);
+		cc.certification();
+		ms.New();
+		cc.programName(p.getPropertyFiledata("ProgramName"));
+		cc.Editor(p.getPropertyFiledata("ProgramName"));
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		WebElement text = new WebDriverWait(driver, 10)
+		         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(@class,'lightTxt pdngVXS')]")));
+		js.executeScript("arguments[0].scrollIntoView(true);", text);
+		text.isDisplayed();
+		Thread.sleep(1000);
+		WebElement marketing =driver.findElement(By.id("demo-simple-select"));
+		
+		Actions actions = new Actions(driver);
+		actions.click().perform();
+		Thread.sleep(500);
+		marketing.click();
+		
+		Robot r = new Robot ();
+		r.keyPress(KeyEvent.VK_DOWN);
+		r.keyPress(KeyEvent.VK_ENTER);
+		r.keyRelease(KeyEvent.VK_DOWN);
+		r.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(500);
+		
+		cc.NeedField1(Keys.chord(Keys.CONTROL,"a"),"1");
+		
+		
+		WebElement text1 = new WebDriverWait(driver, 10)
+		         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[normalize-space()='Duration - in minutes']")));
+		js.executeScript("arguments[0].scrollIntoView(true);", text1);
+		text1.isDisplayed();
+		cc.defaultPercentage("35");
+		cc.defaultReApplyDay("5");
+		
+		Thread.sleep(500);
+		WebElement text2 = new WebDriverWait(driver, 10)
+		         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@class='lightTxt headingSM pdngXS']")));
+		js.executeScript("arguments[0].scrollIntoView(true);", text2);
+		Thread.sleep(500);
+		text2.isDisplayed();
+		
+		cc.durationHrsDD();
+		Thread.sleep(500);
+		cc.Select00Hrs();
+		cc.durationMinDD();
+		Thread.sleep(500);
+		cc.Select05min();
+		
+		cc.QuestionChoiceTypeDD();
+		cc.QuestionChoiceTypeAB();
+		cc.Template();
+		cc.selectTemplate();
+		driver.findElement(By.xpath("//li[normalize-space()='Core Java Programming']")).click();
+		cc.previewTemplate();
+		cc.CancelpreviewTemplate();
+		
+		WebElement publish = driver.findElement(By.xpath("//button[normalize-space()='Publish']"));
+		js.executeScript("arguments[0].scrollIntoView(true);", publish);
+		Thread.sleep(500);
+		publish.click();
+		
+		cc.ConfirmPublish();
+		WebElement text5 = new WebDriverWait(driver, 10)
+		         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Published Successfully')]")));
+		String actualText5 = text5.getText();
+		Assert.assertEquals(actualText5, "Published Successfully");
+		
+		//delete certification
+		driver.navigate().refresh();
+		cc.certification();
+		Thread.sleep(2000);
+		cc.search(p.getPropertyFiledata("ProgramName"));
+		//open the certification
+		driver.findElement(By.xpath("//div[@class='flexMinWidthCol titleHeading pdngHXS justifyCntr']")).click();
+		//delete
+		driver.findElement(By.xpath("(//*[name()='svg'][@aria-label='Delete'])[1]")).click();
+		ms.ConfirmDelete();
+		WebElement textt  = new WebDriverWait(driver, 10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Deleted Successfully')]")));
+		String actualTextt = textt.getText();
+		Assert.assertEquals(actualTextt, "Deleted Successfully");
+		
+	}
 	
 }

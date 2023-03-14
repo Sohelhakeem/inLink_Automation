@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CompanyScripts.compCertification">
+      <class name="CompanyScripts.ConfigureDeptScripts">
         <methods>
-          <include name="CreateTemplate"/>
-          <include name="CreateQuestionBank"/>
+          <include name="create_Dept"/>
           <include name="openApp"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- CompanyScripts.compCertification -->
+      </class> <!-- CompanyScripts.ConfigureDeptScripts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

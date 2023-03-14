@@ -3,6 +3,9 @@ package CompanyScripts;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -43,9 +46,9 @@ public class ConfigureDeptScripts extends BaseClass{
 		c.EnterDiscription(p.getPropertyFiledata("Description"));
 		Thread.sleep(500);
 		c.Create();
-		Thread.sleep(3000);
-		String text = driver.findElement(By.xpath("//div[contains(text(),'Designation Created Successfully')]")).getText();
-		Assert.assertEquals(text, "Designation Created Successfully");
+		WebElement text = new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Designation Created Successfully')]")));
+		String actualText = text.getText();
+		Assert.assertEquals(actualText, "Designation Created Successfully");
 		
 	}
 	@Test(priority=2)
@@ -79,9 +82,9 @@ public class ConfigureDeptScripts extends BaseClass{
 		c.EnterName(p.getPropertyFiledata("DepartmentName"));
 		c.EnterDiscription(p.getPropertyFiledata("Description"));
 		c.Updata();
-		Thread.sleep(2000);
-		String text = driver.findElement(By.xpath("//div[contains(text(),'Department Updated Successfully')]")).getText();
-		Assert.assertEquals(text, "Department Updated Successfully");
+		WebElement text = new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Department Updated Successfully')]")));
+		String actualText = text.getText();
+		Assert.assertEquals(actualText, "Department Updated Successfully");
 	}
 	@Test(priority=3)
 	public void Delete_Dept() throws IOException, InterruptedException {
@@ -110,9 +113,9 @@ public class ConfigureDeptScripts extends BaseClass{
 		c.searchDeptField(p.getPropertyFiledata("DepartmentName"));
 		c.DeleteDepartment();
 		c.ConfirmDeleteDepartment();
-		Thread.sleep(1000);
-		String text = driver.findElement(By.xpath("//div[contains(text(),'Department Deleted Successfully')]")).getText();
-		Assert.assertEquals(text, "Department Deleted Successfully");
+		WebElement text = new WebDriverWait(driver,10).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Department Deleted Successfully')]")));
+		String actualText = text.getText();
+		Assert.assertEquals(actualText, "Department Deleted Successfully");
 	}
 		
 }

@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -18,6 +19,7 @@ import genericLib.BaseClass;
 import pomPages.MarketingSystem_Certification;
 import pomPages.QuestionBank_Certification;
 import pomPages.Templates_Certification;
+import pomPages.Certification_Certification;
 import pomPages.LoginPage;
 
 public class Certifications extends BaseClass {
@@ -125,5 +127,106 @@ public class Certifications extends BaseClass {
 		Assert.assertEquals(actualText2, "Published Successfully");
 	
 		}
-
+	@Test(priority=4)
+	public void CreateCertificate() throws IOException, AWTException, InterruptedException {
+		LoginPage l = new LoginPage(driver);
+		l.email_TF(p.getPropertyFiledata("emailid"));
+		l.password_TF(p.getPropertyFiledata("password"));
+		l.LoginButton();
+		MarketingSystem_Certification ms = new MarketingSystem_Certification(driver);
+		ms.certificationModule();
+		Certification_Certification cc = new Certification_Certification(driver);
+		cc.certification();
+		ms.New();
+		cc.programName(p.getPropertyFiledata("ProgramName"));
+		cc.Editor(p.getPropertyFiledata("ProgramName"));
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		WebElement text = new WebDriverWait(driver, 10)
+		         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(@class,'lightTxt pdngVXS')]")));
+		js.executeScript("arguments[0].scrollIntoView(true);", text);
+		text.isDisplayed();
+		Thread.sleep(1000);
+		WebElement marketing =driver.findElement(By.id("demo-simple-select"));
+		
+		Actions actions = new Actions(driver);
+		actions.click().perform();
+		Thread.sleep(500);
+		marketing.click();
+		
+		Robot r = new Robot ();
+		r.keyPress(KeyEvent.VK_DOWN);
+		r.keyPress(KeyEvent.VK_ENTER);
+		r.keyRelease(KeyEvent.VK_DOWN);
+		r.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(500);
+		
+		cc.NeedField1(Keys.chord(Keys.CONTROL,"a"),"1");
+		
+		WebElement text1 = new WebDriverWait(driver, 10)
+		         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[normalize-space()='Duration - in minutes']")));
+		js.executeScript("arguments[0].scrollIntoView(true);", text1);
+		text1.isDisplayed();
+		cc.defaultPercentage("35");
+		cc.defaultReApplyDay("5");
+		
+		Thread.sleep(500);
+		WebElement text2 = new WebDriverWait(driver, 10)
+		         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@class='lightTxt headingSM pdngXS']")));
+		js.executeScript("arguments[0].scrollIntoView(true);", text2);
+		Thread.sleep(500);
+		text2.isDisplayed();
+		
+		cc.durationHrsDD();
+		Thread.sleep(500);
+		cc.Select00Hrs();
+		cc.durationMinDD();
+		Thread.sleep(500);
+		cc.Select05min();
+		
+		cc.QuestionChoiceTypeDD();
+		cc.QuestionChoiceTypeAB();
+		cc.Template();
+		cc.selectTemplate();
+		driver.findElement(By.xpath("//li[normalize-space()='Core Java Programming']")).click();
+		cc.previewTemplate();
+		cc.CancelpreviewTemplate();
+		
+		WebElement publish = driver.findElement(By.xpath("//button[normalize-space()='Publish']"));
+		js.executeScript("arguments[0].scrollIntoView(true);", publish);
+		Thread.sleep(500);
+		publish.click();
+		
+		cc.ConfirmPublish();
+		WebElement text5 = new WebDriverWait(driver, 10)
+		         .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Published Successfully')]")));
+		String actualText5 = text5.getText();
+		Assert.assertEquals(actualText5, "Published Successfully");
+		
+	}
+	@Test(priority=5)
+	public void testDisplayed() throws IOException, AWTException, InterruptedException {
+		LoginPage l = new LoginPage(driver);
+		l.email_TF("elon1@yopmail.com");
+		l.password_TF("Inlink@123");
+		l.LoginButton();
+		MarketingSystem_Certification ms = new MarketingSystem_Certification(driver);
+		ms.certificationModule();
+		Thread.sleep(2000);
+		WebElement search = driver.findElement(By.xpath("//input[@type='search']"));
+		search.sendKeys(p.getPropertyFiledata("ProgramName"));
+		
+		WebElement getCertificate = driver.findElement(By.xpath("(//button[@type='button'][normalize-space()='GET CERTIFICATE'])[1]"));
+		getCertificate.click();
+		
+		WebElement SelectCheckbox = driver.findElement(By.xpath("//input[@type='checkbox']"));
+		SelectCheckbox.click();
+		
+		WebElement TakeTestBtn = driver.findElement(By.xpath("//button[normalize-space()='TAKE A TEST']"));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", TakeTestBtn);
+		TakeTestBtn.isDisplayed();
+		
+		}
+	
 }
